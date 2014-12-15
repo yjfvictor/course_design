@@ -1,0 +1,859 @@
+ -- Copyright (C) 1991-2009 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		3.3V
+ --					Bank 2:		3.3V
+ --					Bank 3:		3.3V
+ --					Bank 4:		3.3V
+ --					Bank 7:		3.3V
+ --					Bank 8:		3.3V
+ --					Bank 9:		3.3V
+ --					Bank 10:	3.3V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks (Bank 13, 14, 15, 16 and 17),
+ --           	    connect each pin marked GND* either individually through a 10k Ohm resistor
+ --           	    to GND or tie all pins together and connect through a single 10k Ohm resistor
+ --           	    to GND.
+ --           	    For non-transceiver I/O banks, connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_VCC*      : Connect each pin marked GXB_VCC* either individually through a
+ --                 10k Ohm resistor to VCCT/VCCR (1.2V) or tie all pins together
+ --                 and connect through a single 10k Ohm resistor to  VCCT/VCCR (1.2V).
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+CHIP  "binToHex"  ASSIGNED TO AN: EP1AGX20CF780C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A2        : gnd    :                   :         :           :                
+GND                          : A3        : gnd    :                   :         :           :                
+GND                          : A4        : gnd    :                   :         :           :                
+GND                          : A5        : gnd    :                   :         :           :                
+GND                          : A6        : gnd    :                   :         :           :                
+GND*                         : A7        :        :                   :         : 4         :                
+GND*                         : A8        :        :                   :         : 4         :                
+GND*                         : A9        :        :                   :         : 4         :                
+GND*                         : A10       :        :                   :         : 4         :                
+dot_matrix_screen[122]       : A11       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[41]        : A12       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[39]        : A13       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[248]       : A14       : output : 3.3-V LVTTL       :         : 9         : N              
+dot_matrix_screen[138]       : A15       : output : 3.3-V LVTTL       :         : 9         : N              
+dot_matrix_screen[54]        : A16       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[129]       : A17       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[176]       : A18       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[224]       : A19       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[234]       : A20       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[238]       : A21       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[194]       : A22       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[53]        : A23       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[9]         : A24       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[16]        : A25       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[84]        : A26       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : A27       : gnd    :                   :         :           :                
+GND                          : AA1       : gnd    :                   :         :           :                
+GND                          : AA2       : gnd    :                   :         :           :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+GND                          : AA6       : gnd    :                   :         :           :                
+GND                          : AA7       : gnd    :                   :         :           :                
+PLL_ENA                      : AA8       :        :                   :         : 7         :                
+GND                          : AA9       : gnd    :                   :         :           :                
+VCCIO7                       : AA10      : power  :                   : 3.3V    : 7         :                
+GND*                         : AA11      :        :                   :         : 7         :                
+GND                          : AA12      : gnd    :                   :         :           :                
+VCCIO7                       : AA13      : power  :                   : 3.3V    : 7         :                
+VCC_PLL6_OUT                 : AA14      : power  :                   : 3.3V    : 10        :                
+GND                          : AA15      : gnd    :                   :         :           :                
+VCCIO8                       : AA16      : power  :                   : 3.3V    : 8         :                
+GND*                         : AA17      :        :                   :         : 8         :                
+GND                          : AA18      : gnd    :                   :         :           :                
+GND*                         : AA19      :        :                   :         : 8         :                
+GND                          : AA20      : gnd    :                   :         :           :                
+GND                          : AA21      : gnd    :                   :         :           :                
+GND*                         : AA22      :        :                   :         : 1         :                
+GND*                         : AA23      :        :                   :         : 1         :                
+GND                          : AA24      : gnd    :                   :         :           :                
+dot_matrix_screen[103]       : AA25      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[50]        : AA26      : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : AA27      : gnd    :                   :         :           :                
+dot_matrix_screen[100]       : AA28      : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AB1       :        :                   :         :           :                
+GND*                         : AB2       :        :                   :         :           :                
+GND                          : AB3       : gnd    :                   :         :           :                
+GND*                         : AB4       :        :                   :         :           :                
+GND*                         : AB5       :        :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+nCEO                         : AB7       :        :                   :         : 7         :                
+GND*                         : AB8       :        :                   :         : 7         :                
+GND*                         : AB9       :        :                   :         : 7         :                
+GND*                         : AB10      :        :                   :         : 7         :                
+GND*                         : AB11      :        :                   :         : 7         :                
+GND*                         : AB12      :        :                   :         : 7         :                
+dot_matrix_screen[88]        : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
+VREFB7                       : AB14      : power  :                   :         : 7         :                
+dot_matrix_screen[35]        : AB15      : output : 3.3-V LVTTL       :         : 8         : N              
+NC                           : AB16      :        :                   :         :           :                
+dot_matrix_screen[163]       : AB17      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[48]        : AB18      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[175]       : AB19      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AB20      :        :                   :         : 8         :                
+dot_matrix_screen[93]        : AB21      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[52]        : AB22      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[90]        : AB23      : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AB24      :        :                   :         : 1         :                
+dot_matrix_screen[168]       : AB25      : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AB26      :        :                   :         : 1         :                
+dot_matrix_screen[112]       : AB27      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[104]       : AB28      : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : AC1       : gnd    :                   :         :           :                
+GND                          : AC2       : gnd    :                   :         :           :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+GND                          : AC7       : gnd    :                   :         :           :                
+dot_matrix_screen[72]        : AC8       : output : 3.3-V LVTTL       :         : 7         : N              
+dot_matrix_screen[86]        : AC9       : output : 3.3-V LVTTL       :         : 7         : N              
+VREFB7                       : AC10      : power  :                   :         : 7         :                
+GND*                         : AC11      :        :                   :         : 7         :                
+dot_matrix_screen[183]       : AC12      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AC13      :        :                   :         : 7         :                
+GND*                         : AC14      :        :                   :         : 7         :                
+dot_matrix_screen[42]        : AC15      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[58]        : AC16      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[150]       : AC17      : output : 3.3-V LVTTL       :         : 8         : N              
+NC                           : AC18      :        :                   :         :           :                
+GND*                         : AC19      :        :                   :         : 8         :                
+NC                           : AC20      :        :                   :         :           :                
+dot_matrix_screen[59]        : AC21      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[215]       : AC22      : output : 3.3-V LVTTL       :         : 1         : N              
+input[2]                     : AC23      : input  : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[49]        : AC24      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[44]        : AC25      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[223]       : AC26      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[77]        : AC27      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[251]       : AC28      : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AD1       :        :                   :         :           :                
+GND*                         : AD2       :        :                   :         :           :                
+GND                          : AD3       : gnd    :                   :         :           :                
+GND*                         : AD4       :        :                   :         :           :                
+GND*                         : AD5       :        :                   :         :           :                
+GND                          : AD6       : gnd    :                   :         :           :                
+GND                          : AD7       : gnd    :                   :         :           :                
+NC                           : AD8       :        :                   :         :           :                
+GND                          : AD9       : gnd    :                   :         :           :                
+GND*                         : AD10      :        :                   :         : 7         :                
+dot_matrix_screen[55]        : AD11      : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : AD12      : gnd    :                   :         :           :                
+dot_matrix_screen[134]       : AD13      : output : 3.3-V LVTTL       :         : 7         : N              
+dot_matrix_screen[37]        : AD14      : output : 3.3-V LVTTL       :         : 10        : N              
+GND                          : AD15      : gnd    :                   :         :           :                
+dot_matrix_screen[182]       : AD16      : output : 3.3-V LVTTL       :         : 8         : N              
+VREFB8                       : AD17      : power  :                   :         : 8         :                
+GND                          : AD18      : gnd    :                   :         :           :                
+VREFB8                       : AD19      : power  :                   :         : 8         :                
+dot_matrix_screen[239]       : AD20      : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AD21      : gnd    :                   :         :           :                
+NC                           : AD22      :        :                   :         :           :                
+NC                           : AD23      :        :                   :         :           :                
+GND                          : AD24      : gnd    :                   :         :           :                
+dot_matrix_screen[126]       : AD25      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[185]       : AD26      : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : AD27      : gnd    :                   :         :           :                
+dot_matrix_screen[43]        : AD28      : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : AE1       : gnd    :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+GND                          : AE3       : gnd    :                   :         :           :                
+GND                          : AE4       : gnd    :                   :         :           :                
+GND                          : AE5       : gnd    :                   :         :           :                
+GND                          : AE6       : gnd    :                   :         :           :                
+dot_matrix_screen[151]       : AE7       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AE8       :        :                   :         : 7         :                
+GND*                         : AE9       :        :                   :         : 7         :                
+dot_matrix_screen[56]        : AE10      : output : 3.3-V LVTTL       :         : 7         : N              
+dot_matrix_screen[184]       : AE11      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AE12      :        :                   :         : 7         :                
+GND*                         : AE13      :        :                   :         : 7         :                
+GND*                         : AE14      :        :                   :         : 10        :                
+dot_matrix_screen[24]        : AE15      : output : 3.3-V LVTTL       :         : 7         : N              
+NC                           : AE16      :        :                   :         :           :                
+dot_matrix_screen[146]       : AE17      : output : 3.3-V LVTTL       :         : 8         : N              
+NC                           : AE18      :        :                   :         :           :                
+GND*                         : AE19      :        :                   :         : 8         :                
+NC                           : AE20      :        :                   :         :           :                
+dot_matrix_screen[255]       : AE21      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[115]       : AE22      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AE23      :        :                   :         : 8         :                
+dot_matrix_screen[92]        : AE24      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[116]       : AE25      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[200]       : AE26      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[159]       : AE27      : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[191]       : AE28      : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+GND                          : AF3       : gnd    :                   :         :           :                
+GND*                         : AF4       :        :                   :         :           :                
+GND*                         : AF5       :        :                   :         :           :                
+GND                          : AF6       : gnd    :                   :         :           :                
+dot_matrix_screen[80]        : AF7       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AF8       :        :                   :         : 7         :                
+GND*                         : AF9       :        :                   :         : 7         :                
+dot_matrix_screen[75]        : AF10      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AF11      :        :                   :         : 7         :                
+dot_matrix_screen[91]        : AF12      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AF13      :        :                   :         : 7         :                
+dot_matrix_screen[32]        : AF14      : output : 3.3-V LVTTL       :         : 10        : N              
+dot_matrix_screen[33]        : AF15      : output : 3.3-V LVTTL       :         : 7         : N              
+NC                           : AF16      :        :                   :         :           :                
+dot_matrix_screen[73]        : AF17      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[140]       : AF18      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AF19      :        :                   :         : 8         :                
+dot_matrix_screen[195]       : AF20      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[196]       : AF21      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[172]       : AF22      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[51]        : AF23      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[179]       : AF24      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AF25      :        :                   :         : 8         :                
+dot_matrix_screen[95]        : AF26      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[70]        : AF27      : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AF28      :        :                   :         : 1         :                
+GND                          : AG1       : gnd    :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+GND                          : AG3       : gnd    :                   :         :           :                
+GND                          : AG4       : gnd    :                   :         :           :                
+GND                          : AG5       : gnd    :                   :         :           :                
+GND                          : AG6       : gnd    :                   :         :           :                
+GND                          : AG7       : gnd    :                   :         :           :                
+GND*                         : AG8       :        :                   :         : 7         :                
+GND                          : AG9       : gnd    :                   :         :           :                
+dot_matrix_screen[208]       : AG10      : output : 3.3-V LVTTL       :         : 7         : N              
+dot_matrix_screen[169]       : AG11      : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : AG12      : gnd    :                   :         :           :                
+GND*                         : AG13      :        :                   :         : 7         :                
+dot_matrix_screen[118]       : AG14      : output : 3.3-V LVTTL       :         : 10        : N              
+GND                          : AG15      : gnd    :                   :         :           :                
+dot_matrix_screen[23]        : AG16      : output : 3.3-V LVTTL       :         : 7         : N              
+dot_matrix_screen[25]        : AG17      : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AG18      : gnd    :                   :         :           :                
+dot_matrix_screen[154]       : AG19      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[206]       : AG20      : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AG21      : gnd    :                   :         :           :                
+dot_matrix_screen[173]       : AG22      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[65]        : AG23      : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+dot_matrix_screen[63]        : AG25      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AG26      :        :                   :         : 8         :                
+GND                          : AG27      : gnd    :                   :         :           :                
+GND                          : AG28      : gnd    :                   :         :           :                
+GND                          : AH2       : gnd    :                   :         :           :                
+GND                          : AH3       : gnd    :                   :         :           :                
+GND                          : AH4       : gnd    :                   :         :           :                
+GND                          : AH5       : gnd    :                   :         :           :                
+GND                          : AH6       : gnd    :                   :         :           :                
+GND*                         : AH7       :        :                   :         : 7         :                
+GND*                         : AH8       :        :                   :         : 7         :                
+GND*                         : AH9       :        :                   :         : 7         :                
+GND*                         : AH10      :        :                   :         : 7         :                
+dot_matrix_screen[199]       : AH11      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AH12      :        :                   :         : 7         :                
+GND*                         : AH13      :        :                   :         : 7         :                
+dot_matrix_screen[117]       : AH14      : output : 3.3-V LVTTL       :         : 10        : N              
+dot_matrix_screen[131]       : AH15      : output : 3.3-V LVTTL       :         : 10        : N              
+dot_matrix_screen[27]        : AH16      : output : 3.3-V LVTTL       :         : 7         : N              
+dot_matrix_screen[26]        : AH17      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AH18      :        :                   :         : 8         :                
+GND*                         : AH19      :        :                   :         : 8         :                
+dot_matrix_screen[153]       : AH20      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[190]       : AH21      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[180]       : AH22      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[45]        : AH23      : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[60]        : AH24      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AH25      :        :                   :         : 8         :                
+input[0]                     : AH26      : input  : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AH27      : gnd    :                   :         :           :                
+GND                          : B1        : gnd    :                   :         :           :                
+GND                          : B2        : gnd    :                   :         :           :                
+GND                          : B3        : gnd    :                   :         :           :                
+GND                          : B4        : gnd    :                   :         :           :                
+GND                          : B5        : gnd    :                   :         :           :                
+GND                          : B6        : gnd    :                   :         :           :                
+GND                          : B7        : gnd    :                   :         :           :                
+GND*                         : B8        :        :                   :         : 4         :                
+GND                          : B9        : gnd    :                   :         :           :                
+GND*                         : B10       :        :                   :         : 4         :                
+GND*                         : B11       :        :                   :         : 4         :                
+GND                          : B12       : gnd    :                   :         :           :                
+dot_matrix_screen[136]       : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[217]       : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+GND                          : B15       : gnd    :                   :         :           :                
+dot_matrix_screen[160]       : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[158]       : B17       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : B18       : gnd    :                   :         :           :                
+dot_matrix_screen[241]       : B19       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[76]        : B20       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : B21       : gnd    :                   :         :           :                
+dot_matrix_screen[187]       : B22       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[0]         : B23       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+dot_matrix_screen[11]        : B25       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[245]       : B26       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : B27       : gnd    :                   :         :           :                
+GND                          : B28       : gnd    :                   :         :           :                
+GND                          : C1        : gnd    :                   :         :           :                
+GND                          : C2        : gnd    :                   :         :           :                
+GND                          : C3        : gnd    :                   :         :           :                
+GXB_VCC*                     : C4        :        :                   : 1.2V    : 13        :                
+GND*                         : C5        :        :                   :         : 13        :                
+GND                          : C6        : gnd    :                   :         :           :                
+GND*                         : C7        :        :                   :         : 4         :                
+GND*                         : C8        :        :                   :         : 4         :                
+GND*                         : C9        :        :                   :         : 4         :                
+GND*                         : C10       :        :                   :         : 4         :                
+GND*                         : C11       :        :                   :         : 4         :                
+GND*                         : C12       :        :                   :         : 4         :                
+GND*                         : C13       :        :                   :         : 4         :                
+dot_matrix_screen[125]       : C14       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[133]       : C15       : output : 3.3-V LVTTL       :         : 9         : N              
+dot_matrix_screen[252]       : C16       : output : 3.3-V LVTTL       :         : 3         : N              
+NC                           : C17       :        :                   :         :           :                
+dot_matrix_screen[149]       : C18       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[240]       : C19       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[189]       : C20       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[246]       : C21       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[210]       : C22       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[202]       : C23       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[62]        : C24       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[211]       : C25       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[235]       : C26       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[132]       : C27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[166]       : C28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : D1        : gnd    :                   :         :           :                
+GND                          : D2        : gnd    :                   :         :           :                
+GND                          : D3        : gnd    :                   :         :           :                
+GND                          : D4        : gnd    :                   :         :           :                
+GND                          : D5        : gnd    :                   :         :           :                
+GND                          : D6        : gnd    :                   :         :           :                
+dot_matrix_screen[40]        : D7        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : D8        :        :                   :         : 4         :                
+GND*                         : D9        :        :                   :         : 4         :                
+GND*                         : D10       :        :                   :         : 4         :                
+dot_matrix_screen[198]       : D11       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : D12       :        :                   :         : 4         :                
+GND*                         : D13       :        :                   :         : 4         :                
+dot_matrix_screen[135]       : D14       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[119]       : D15       : output : 3.3-V LVTTL       :         : 9         : N              
+dot_matrix_screen[57]        : D16       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[170]       : D17       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[155]       : D18       : output : 3.3-V LVTTL       :         : 3         : N              
+NC                           : D19       :        :                   :         :           :                
+dot_matrix_screen[69]        : D20       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[236]       : D21       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[10]        : D22       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[98]        : D23       : output : 3.3-V LVTTL       :         : 3         : N              
+nCE                          : D24       :        :                   :         : 3         :                
+DCLK                         : D25       :        :                   :         : 3         :                
+nSTATUS                      : D26       :        :                   :         : 3         :                
+dot_matrix_screen[212]       : D27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[242]       : D28       : output : 3.3-V LVTTL       :         : 2         : N              
+GXB_VCC*                     : E1        :        :                   : 1.2V    : 13        :                
+GND*                         : E2        :        :                   :         : 13        :                
+GND                          : E3        : gnd    :                   :         :           :                
+GXB_VCC*                     : E4        :        :                   : 1.2V    : 13        :                
+GND*                         : E5        :        :                   :         : 13        :                
+GND                          : E6        : gnd    :                   :         :           :                
+GND                          : E7        : gnd    :                   :         :           :                
+MSEL1                        : E8        :        :                   :         : 4         :                
+GND                          : E9        : gnd    :                   :         :           :                
+GND*                         : E10       :        :                   :         : 4         :                
+GND*                         : E11       :        :                   :         : 4         :                
+GND                          : E12       : gnd    :                   :         :           :                
+GND*                         : E13       :        :                   :         : 4         :                
+dot_matrix_screen[137]       : E14       : output : 3.3-V LVTTL       :         : 4         : N              
+GND                          : E15       : gnd    :                   :         :           :                
+dot_matrix_screen[164]       : E16       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[156]       : E17       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : E18       : gnd    :                   :         :           :                
+VREFB3                       : E19       : power  :                   :         : 3         :                
+VREFB3                       : E20       : power  :                   :         : 3         :                
+GND                          : E21       : gnd    :                   :         :           :                
+NC                           : E22       :        :                   :         :           :                
+CONF_DONE                    : E23       :        :                   :         : 3         :                
+GND                          : E24       : gnd    :                   :         :           :                
+dot_matrix_screen[231]       : E25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[230]       : E26       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : E27       : gnd    :                   :         :           :                
+dot_matrix_screen[232]       : E28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : F1        : gnd    :                   :         :           :                
+GND                          : F2        : gnd    :                   :         :           :                
+GND                          : F3        : gnd    :                   :         :           :                
+GND                          : F4        : gnd    :                   :         :           :                
+GND                          : F5        : gnd    :                   :         :           :                
+GND                          : F6        : gnd    :                   :         :           :                
+TEMPDIODEp                   : F7        :        :                   :         :           :                
+TDO                          : F8        : output :                   :         : 4         :                
+NC                           : F9        :        :                   :         :           :                
+VREFB4                       : F10       : power  :                   :         : 4         :                
+NC                           : F11       :        :                   :         :           :                
+VREFB4                       : F12       : power  :                   :         : 4         :                
+GND*                         : F13       :        :                   :         : 4         :                
+dot_matrix_screen[141]       : F14       : output : 3.3-V LVTTL       :         : 9         : N              
+dot_matrix_screen[34]        : F15       : output : 3.3-V LVTTL       :         : 4         : N              
+input[1]                     : F16       : input  : 3.3-V LVTTL       :         : 3         : N              
+~DATA0~ / RESERVED_INPUT     : F17       : input  : 3.3-V LVTTL       :         : 3         : N              
+NC                           : F18       :        :                   :         :           :                
+NC                           : F19       :        :                   :         :           :                
+dot_matrix_screen[12]        : F20       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[220]       : F21       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[254]       : F22       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[221]       : F23       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[229]       : F24       : output : 3.3-V LVTTL       :         : 2         : N              
+NC                           : F25       :        :                   :         :           :                
+dot_matrix_screen[205]       : F26       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[209]       : F27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[243]       : F28       : output : 3.3-V LVTTL       :         : 2         : N              
+GXB_VCC*                     : G1        :        :                   : 1.2V    : 13        :                
+GND*                         : G2        :        :                   :         : 13        :                
+GND                          : G3        : gnd    :                   :         :           :                
+GXB_VCC*                     : G4        :        :                   : 1.2V    : 13        :                
+GND*                         : G5        :        :                   :         : 13        :                
+GND                          : G6        : gnd    :                   :         :           :                
+TEMPDIODEn                   : G7        :        :                   :         :           :                
+MSEL3                        : G8        :        :                   :         : 4         :                
+GND*                         : G9        :        :                   :         : 4         :                
+GND*                         : G10       :        :                   :         : 4         :                
+NC                           : G11       :        :                   :         :           :                
+GND*                         : G12       :        :                   :         : 4         :                
+dot_matrix_screen[38]        : G13       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[128]       : G14       : output : 3.3-V LVTTL       :         : 9         : N              
+dot_matrix_screen[130]       : G15       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[142]       : G16       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[148]       : G17       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[143]       : G18       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[17]        : G19       : output : 3.3-V LVTTL       :         : 3         : N              
+NC                           : G20       :        :                   :         :           :                
+dot_matrix_screen[225]       : G21       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[4]         : G22       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[237]       : G23       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[228]       : G24       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[174]       : G25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[89]        : G26       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[144]       : G27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[162]       : G28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GND                          : H3        : gnd    :                   :         :           :                
+GND                          : H4        : gnd    :                   :         :           :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+MSEL2                        : H8        :        :                   :         : 4         :                
+GND                          : H9        : gnd    :                   :         :           :                
+NC                           : H10       :        :                   :         :           :                
+GND*                         : H11       :        :                   :         : 4         :                
+GND                          : H12       : gnd    :                   :         :           :                
+dot_matrix_screen[121]       : H13       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : H14       : power  :                   : 3.3V    : 4         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+VCCIO3                       : H17       : power  :                   : 3.3V    : 3         :                
+GND                          : H18       : gnd    :                   :         :           :                
+dot_matrix_screen[1]         : H19       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : H20       : power  :                   : 3.3V    : 3         :                
+GND                          : H21       : gnd    :                   :         :           :                
+dot_matrix_screen[124]       : H22       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[247]       : H23       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : H24       : gnd    :                   :         :           :                
+dot_matrix_screen[214]       : H25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[96]        : H26       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : H27       : gnd    :                   :         :           :                
+dot_matrix_screen[74]        : H28       : output : 3.3-V LVTTL       :         : 2         : N              
+GXB_VCC*                     : J1        :        :                   : 1.2V    : 13        :                
+GND*                         : J2        :        :                   :         : 13        :                
+GND                          : J3        : gnd    :                   :         :           :                
+RREFB13                      : J4        :        :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+GND                          : J6        : gnd    :                   :         :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+MSEL0                        : J8        :        :                   :         : 4         :                
+VCCIO4                       : J9        : power  :                   : 3.3V    : 4         :                
+GND*                         : J10       :        :                   :         : 4         :                
+GND*                         : J11       :        :                   :         : 4         :                
+VCCIO4                       : J12       : power  :                   : 3.3V    : 4         :                
+VCCPD4                       : J13       : power  :                   : 3.3V    : 4         :                
+VCC_PLL5_OUT                 : J14       : power  :                   : 3.3V    : 9         :                
+VCCA_PLL5                    : J15       : power  :                   : 1.2V    :           :                
+GNDA_PLL5                    : J16       : gnd    :                   :         :           :                
+VCCPD3                       : J17       : power  :                   : 3.3V    : 3         :                
+dot_matrix_screen[193]       : J18       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : J19       : power  :                   : 3.3V    : 3         :                
+NC                           : J20       :        :                   :         :           :                
+dot_matrix_screen[227]       : J21       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO2                       : J22       : power  :                   : 3.3V    : 2         :                
+dot_matrix_screen[219]       : J23       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[197]       : J24       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[83]        : J25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[145]       : J26       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[204]       : J27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[177]       : J28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GND                          : K3        : gnd    :                   :         :           :                
+GND                          : K4        : gnd    :                   :         :           :                
+GND                          : K5        : gnd    :                   :         :           :                
+GND                          : K6        : gnd    :                   :         :           :                
+NC                           : K7        :        :                   :         :           :                
+NC                           : K8        :        :                   :         :           :                
+VCCA                         : K9        : power  :                   : 3.3V    :           :                
+GND*                         : K10       :        :                   :         : 4         :                
+GND*                         : K11       :        :                   :         : 4         :                
+dot_matrix_screen[152]       : K12       : output : 3.3-V LVTTL       :         : 4         : N              
+dot_matrix_screen[123]       : K13       : output : 3.3-V LVTTL       :         : 4         : N              
+NC                           : K14       :        :                   :         :           :                
+GNDA_PLL5                    : K15       : gnd    :                   :         :           :                
+VCCD_PLL5                    : K16       : power  :                   : 1.2V    :           :                
+dot_matrix_screen[244]       : K17       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[188]       : K18       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[171]       : K19       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[18]        : K20       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[178]       : K21       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[66]        : K22       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[113]       : K23       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[226]       : K24       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[218]       : K25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[186]       : K26       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[203]       : K27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[94]        : K28       : output : 3.3-V LVTTL       :         : 2         : N              
+GXB_VCC*                     : L1        :        :                   : 1.2V    : 13        :                
+GND*                         : L2        :        :                   :         : 13        :                
+GND                          : L3        : gnd    :                   :         :           :                
+GXB_VCC*                     : L4        :        :                   : 1.2V    : 13        :                
+GND*                         : L5        :        :                   :         : 13        :                
+VCCA                         : L6        : power  :                   : 3.3V    :           :                
+VCCR                         : L7        : power  :                   : 1.2V    :           :                
+VCCT_B13                     : L8        : power  :                   : 1.2V    : 13        :                
+VCCH_B13                     : L9        : power  :                   : 1.2V/1.5V : 13        :                
+VCCP                         : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+GND*                         : L12       :        :                   :         : 4         :                
+dot_matrix_screen[120]       : L13       : output : 3.3-V LVTTL       :         : 4         : N              
+NC                           : L14       :        :                   :         :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+dot_matrix_screen[139]       : L16       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[157]       : L17       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : L18       : gnd    :                   :         :           :                
+dot_matrix_screen[64]        : L19       : output : 3.3-V LVTTL       :         : 3         : N              
+dot_matrix_screen[2]         : L20       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO2                       : L22       : power  :                   : 3.3V    : 2         :                
+dot_matrix_screen[233]       : L23       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : L24       : gnd    :                   :         :           :                
+dot_matrix_screen[67]        : L25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[68]        : L26       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : L27       : gnd    :                   :         :           :                
+dot_matrix_screen[161]       : L28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GND                          : M3        : gnd    :                   :         :           :                
+GND                          : M4        : gnd    :                   :         :           :                
+GND                          : M5        : gnd    :                   :         :           :                
+VCCA                         : M6        : power  :                   : 3.3V    :           :                
+VCCR                         : M7        : power  :                   : 1.2V    :           :                
+VCCT_B13                     : M8        : power  :                   : 1.2V    : 13        :                
+VCCH_B13                     : M9        : power  :                   : 1.2V/1.5V : 13        :                
+VCCP                         : M10       : power  :                   : 1.2V    :           :                
+GND                          : M11       : gnd    :                   :         :           :                
+VCCINT                       : M12       : power  :                   : 1.2V    :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+GND                          : M15       : gnd    :                   :         :           :                
+VCCINT                       : M16       : power  :                   : 1.2V    :           :                
+GND                          : M17       : gnd    :                   :         :           :                
+VCCINT                       : M18       : power  :                   : 1.2V    :           :                
+GND                          : M19       : gnd    :                   :         :           :                
+dot_matrix_screen[8]         : M20       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[192]       : M21       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[207]       : M22       : output : 3.3-V LVTTL       :         : 2         : N              
+VREFB2                       : M23       : power  :                   :         : 2         :                
+dot_matrix_screen[19]        : M24       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[253]       : M25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[79]        : M26       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[78]        : M27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[213]       : M28       : output : 3.3-V LVTTL       :         : 2         : N              
+GXB_VCC*                     : N1        :        :                   : 1.2V    : 13        :                
+GND*                         : N2        :        :                   :         : 13        :                
+GND                          : N3        : gnd    :                   :         :           :                
+GXB_VCC*                     : N4        :        :                   : 1.2V    : 13        :                
+GND*                         : N5        :        :                   :         : 13        :                
+VCCL_B13                     : N6        : power  :                   : 1.2V    : 13        :                
+GND                          : N7        : gnd    :                   :         :           :                
+GND                          : N8        : gnd    :                   :         :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+VCCINT                       : N11       : power  :                   : 1.2V    :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+VCCINT                       : N13       : power  :                   : 1.2V    :           :                
+GND                          : N14       : gnd    :                   :         :           :                
+VCCINT                       : N15       : power  :                   : 1.2V    :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCCINT                       : N17       : power  :                   : 1.2V    :           :                
+GND                          : N18       : gnd    :                   :         :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+dot_matrix_screen[165]       : N20       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : N21       : power  :                   : 3.3V    : 2         :                
+VCCD_PLL1                    : N22       : power  :                   : 1.2V    :           :                
+VCCA_PLL1                    : N23       : power  :                   : 1.2V    :           :                
+GND                          : N24       : gnd    :                   :         :           :                
+dot_matrix_screen[6]         : N25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[5]         : N26       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : N27       : gnd    :                   :         :           :                
+dot_matrix_screen[81]        : N28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GND                          : P3        : gnd    :                   :         :           :                
+GND                          : P4        : gnd    :                   :         :           :                
+GND                          : P5        : gnd    :                   :         :           :                
+GND                          : P6        : gnd    :                   :         :           :                
+VCCA                         : P7        : power  :                   : 3.3V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCA                         : P9        : power  :                   : 3.3V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+GND                          : P11       : gnd    :                   :         :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+GND                          : P13       : gnd    :                   :         :           :                
+VCCINT                       : P14       : power  :                   : 1.2V    :           :                
+GND                          : P15       : gnd    :                   :         :           :                
+VCCINT                       : P16       : power  :                   : 1.2V    :           :                
+GND                          : P17       : gnd    :                   :         :           :                
+VCCINT                       : P18       : power  :                   : 1.2V    :           :                
+GND                          : P19       : gnd    :                   :         :           :                
+VCCPD2                       : P20       : power  :                   : 3.3V    : 2         :                
+GND                          : P21       : gnd    :                   :         :           :                
+GNDA_PLL1                    : P22       : gnd    :                   :         :           :                
+GNDA_PLL1                    : P23       : gnd    :                   :         :           :                
+dot_matrix_screen[21]        : P24       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[3]         : P25       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[14]        : P26       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[85]        : P27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[97]        : P28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : R1        : gnd    :                   :         :           :                
+GND                          : R2        : gnd    :                   :         :           :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA                         : R6        : power  :                   : 3.3V    :           :                
+VCCR                         : R7        : power  :                   : 1.2V    :           :                
+VCCT_B13                     : R8        : power  :                   : 1.2V    : 13        :                
+VCCH_B13                     : R9        : power  :                   : 1.2V/1.5V : 13        :                
+VCCP                         : R10       : power  :                   : 1.2V    :           :                
+VCCINT                       : R11       : power  :                   : 1.2V    :           :                
+GND                          : R12       : gnd    :                   :         :           :                
+VCCINT                       : R13       : power  :                   : 1.2V    :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+VCCINT                       : R15       : power  :                   : 1.2V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCCINT                       : R17       : power  :                   : 1.2V    :           :                
+GND                          : R18       : gnd    :                   :         :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+dot_matrix_screen[15]        : R20       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[30]        : R21       : output : 3.3-V LVTTL       :         : 2         : N              
+GNDA_PLL2                    : R22       : gnd    :                   :         :           :                
+GNDA_PLL2                    : R23       : gnd    :                   :         :           :                
+GND                          : R24       : gnd    :                   :         :           :                
+input[3]                     : R25       : input  : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[46]        : R26       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : R27       : gnd    :                   :         :           :                
+dot_matrix_screen[7]         : R28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : T1        :        :                   :         :           :                
+GND*                         : T2        :        :                   :         :           :                
+GND                          : T3        : gnd    :                   :         :           :                
+GND*                         : T4        :        :                   :         :           :                
+GND*                         : T5        :        :                   :         :           :                
+VCCA                         : T6        : power  :                   : 3.3V    :           :                
+VCCR                         : T7        : power  :                   : 1.2V    :           :                
+VCCT_B13                     : T8        : power  :                   : 1.2V    : 13        :                
+VCCH_B13                     : T9        : power  :                   : 1.2V/1.5V : 13        :                
+VCCP                         : T10       : power  :                   : 1.2V    :           :                
+GND                          : T11       : gnd    :                   :         :           :                
+VCCINT                       : T12       : power  :                   : 1.2V    :           :                
+GND                          : T13       : gnd    :                   :         :           :                
+VCCINT                       : T14       : power  :                   : 1.2V    :           :                
+GND                          : T15       : gnd    :                   :         :           :                
+VCCINT                       : T16       : power  :                   : 1.2V    :           :                
+GND                          : T17       : gnd    :                   :         :           :                
+VCCINT                       : T18       : power  :                   : 1.2V    :           :                
+dot_matrix_screen[216]       : T19       : output : 3.3-V LVTTL       :         : 1         : N              
+VCCPD1                       : T20       : power  :                   : 3.3V    : 1         :                
+VREFB2                       : T21       : power  :                   :         : 2         :                
+VCCD_PLL2                    : T22       : power  :                   : 1.2V    :           :                
+VCCA_PLL2                    : T23       : power  :                   : 1.2V    :           :                
+GND+                         : T24       :        :                   :         : 2         :                
+GND+                         : T25       :        :                   :         : 2         :                
+dot_matrix_screen[31]        : T26       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[47]        : T27       : output : 3.3-V LVTTL       :         : 2         : N              
+dot_matrix_screen[250]       : T28       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : U1        : gnd    :                   :         :           :                
+GND                          : U2        : gnd    :                   :         :           :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCL_B13                     : U6        : power  :                   : 1.2V    : 13        :                
+GND                          : U7        : gnd    :                   :         :           :                
+GND                          : U8        : gnd    :                   :         :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+GND                          : U10       : gnd    :                   :         :           :                
+VCCINT                       : U11       : power  :                   : 1.2V    :           :                
+GND                          : U12       : gnd    :                   :         :           :                
+VCCINT                       : U13       : power  :                   : 1.2V    :           :                
+GND                          : U14       : gnd    :                   :         :           :                
+VCCINT                       : U15       : power  :                   : 1.2V    :           :                
+GND                          : U16       : gnd    :                   :         :           :                
+VCCINT                       : U17       : power  :                   : 1.2V    :           :                
+GND                          : U18       : gnd    :                   :         :           :                
+dot_matrix_screen[181]       : U19       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[29]        : U20       : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : U21       : gnd    :                   :         :           :                
+VCCIO1                       : U22       : power  :                   : 3.3V    : 1         :                
+dot_matrix_screen[111]       : U23       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[106]       : U24       : output : 3.3-V LVTTL       :         : 1         : N              
+GND+                         : U25       :        :                   :         : 1         :                
+GND+                         : U26       :        :                   :         : 1         :                
+dot_matrix_screen[20]        : U27       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[36]        : U28       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : V1        :        :                   :         :           :                
+GND*                         : V2        :        :                   :         :           :                
+GND                          : V3        : gnd    :                   :         :           :                
+GND*                         : V4        :        :                   :         :           :                
+GND*                         : V5        :        :                   :         :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA                         : V7        : power  :                   : 3.3V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCA                         : V9        : power  :                   : 3.3V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+dot_matrix_screen[167]       : V11       : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : V12       : gnd    :                   :         :           :                
+NC                           : V13       :        :                   :         :           :                
+VCCD_PLL6                    : V14       : power  :                   : 1.2V    :           :                
+GND                          : V15       : gnd    :                   :         :           :                
+nCONFIG                      : V16       :        :                   :         : 8         :                
+TCK                          : V17       : input  :                   :         : 8         :                
+GND                          : V18       : gnd    :                   :         :           :                
+TDI                          : V19       : input  :                   :         : 8         :                
+dot_matrix_screen[13]        : V20       : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : V21       : power  :                   : 3.3V    : 1         :                
+dot_matrix_screen[101]       : V22       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[249]       : V23       : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : V24       : gnd    :                   :         :           :                
+dot_matrix_screen[107]       : V25       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[99]        : V26       : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : V27       : gnd    :                   :         :           :                
+dot_matrix_screen[87]        : V28       : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : W1        : gnd    :                   :         :           :                
+GND                          : W2        : gnd    :                   :         :           :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+GND                          : W7        : gnd    :                   :         :           :                
+GND                          : W8        : gnd    :                   :         :           :                
+GND*                         : W9        :        :                   :         : 7         :                
+NC                           : W10       :        :                   :         :           :                
+NC                           : W11       :        :                   :         :           :                
+NC                           : W12       :        :                   :         :           :                
+GNDA_PLL6                    : W13       : gnd    :                   :         :           :                
+GNDA_PLL6                    : W14       : gnd    :                   :         :           :                
+dot_matrix_screen[147]       : W15       : output : 3.3-V LVTTL       :         : 8         : N              
+dot_matrix_screen[114]       : W16       : output : 3.3-V LVTTL       :         : 8         : N              
+TRST                         : W17       : input  :                   :         : 8         :                
+VCCSEL                       : W18       :        :                   :         : 8         :                
+TMS                          : W19       : input  :                   :         : 8         :                
+GND                          : W20       : gnd    :                   :         :           :                
+dot_matrix_screen[109]       : W21       : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : W22       : gnd    :                   :         :           :                
+VREFB1                       : W23       : power  :                   :         : 1         :                
+dot_matrix_screen[110]       : W24       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[105]       : W25       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[102]       : W26       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[201]       : W27       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : W28       :        :                   :         : 1         :                
+GND*                         : Y1        :        :                   :         :           :                
+GND*                         : Y2        :        :                   :         :           :                
+GND                          : Y3        : gnd    :                   :         :           :                
+GND*                         : Y4        :        :                   :         :           :                
+GND                          : Y5        : gnd    :                   :         :           :                
+GND                          : Y6        : gnd    :                   :         :           :                
+nIO_PULLUP                   : Y7        :        :                   :         : 7         :                
+PORSEL                       : Y8        :        :                   :         : 7         :                
+VCCIO7                       : Y9        : power  :                   : 3.3V    : 7         :                
+dot_matrix_screen[71]        : Y10       : output : 3.3-V LVTTL       :         : 7         : N              
+NC                           : Y11       :        :                   :         :           :                
+VCCPD7                       : Y12       : power  :                   : 3.3V    : 7         :                
+dot_matrix_screen[127]       : Y13       : output : 3.3-V LVTTL       :         : 7         : N              
+VCCA_PLL6                    : Y14       : power  :                   : 1.2V    :           :                
+GND*                         : Y15       :        :                   :         : 8         :                
+VCCPD8                       : Y16       : power  :                   : 3.3V    : 8         :                
+dot_matrix_screen[222]       : Y17       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : Y18       : power  :                   : 3.3V    : 8         :                
+VCCIO8                       : Y19       : power  :                   : 3.3V    : 8         :                
+GND                          : Y20       : gnd    :                   :         :           :                
+dot_matrix_screen[61]        : Y21       : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : Y22       : power  :                   : 3.3V    : 1         :                
+VREFB1                       : Y23       : power  :                   :         : 1         :                
+dot_matrix_screen[28]        : Y24       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[82]        : Y25       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[108]       : Y26       : output : 3.3-V LVTTL       :         : 1         : N              
+dot_matrix_screen[22]        : Y27       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : Y28       :        :                   :         : 1         :                

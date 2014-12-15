@@ -1,0 +1,616 @@
+Simulator report for binToHex
+Sun Nov 04 13:06:20 2012
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------+
+; Simulator Summary                             ;
++-----------------------------+-----------------+
+; Type                        ; Value           ;
++-----------------------------+-----------------+
+; Simulation Start Time       ; 0 ps            ;
+; Simulation End Time         ; 1.0 us          ;
+; Simulation Netlist Size     ; 426 nodes       ;
+; Simulation Coverage         ;      93.19 %    ;
+; Total Number of Transitions ; 11154           ;
+; Simulation Breakpoints      ; 0               ;
+; Family                      ; Arria GX        ;
+; Device                      ; EP1AGX20CF780C6 ;
++-----------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      93.19 % ;
+; Total nodes checked                                 ; 426          ;
+; Total output ports checked                          ; 426          ;
+; Total output ports with complete 1/0-value coverage ; 397          ;
+; Total output ports with no 1/0-value coverage       ; 29           ;
+; Total output ports with no 1-value coverage         ; 29           ;
+; Total output ports with no 0-value coverage         ; 29           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |binToHex|Mux226~0               ; |binToHex|Mux226~0               ; combout          ;
+; |binToHex|Mux224~0               ; |binToHex|Mux224~0               ; combout          ;
+; |binToHex|Mux223~0               ; |binToHex|Mux223~0               ; combout          ;
+; |binToHex|Mux222~0               ; |binToHex|Mux222~0               ; combout          ;
+; |binToHex|Mux221~0               ; |binToHex|Mux221~0               ; combout          ;
+; |binToHex|Mux220~0               ; |binToHex|Mux220~0               ; combout          ;
+; |binToHex|Mux219~0               ; |binToHex|Mux219~0               ; combout          ;
+; |binToHex|Mux217~0               ; |binToHex|Mux217~0               ; combout          ;
+; |binToHex|Mux216~0               ; |binToHex|Mux216~0               ; combout          ;
+; |binToHex|Mux215~0               ; |binToHex|Mux215~0               ; combout          ;
+; |binToHex|Mux213~0               ; |binToHex|Mux213~0               ; combout          ;
+; |binToHex|Mux212~0               ; |binToHex|Mux212~0               ; combout          ;
+; |binToHex|Mux211~0               ; |binToHex|Mux211~0               ; combout          ;
+; |binToHex|Mux208~0               ; |binToHex|Mux208~0               ; combout          ;
+; |binToHex|Mux207~0               ; |binToHex|Mux207~0               ; combout          ;
+; |binToHex|Mux206~0               ; |binToHex|Mux206~0               ; combout          ;
+; |binToHex|Mux205~0               ; |binToHex|Mux205~0               ; combout          ;
+; |binToHex|Mux204~0               ; |binToHex|Mux204~0               ; combout          ;
+; |binToHex|Mux203~0               ; |binToHex|Mux203~0               ; combout          ;
+; |binToHex|Mux201~0               ; |binToHex|Mux201~0               ; combout          ;
+; |binToHex|Mux199~0               ; |binToHex|Mux199~0               ; combout          ;
+; |binToHex|Mux198~0               ; |binToHex|Mux198~0               ; combout          ;
+; |binToHex|Mux197~0               ; |binToHex|Mux197~0               ; combout          ;
+; |binToHex|Mux194~0               ; |binToHex|Mux194~0               ; combout          ;
+; |binToHex|Mux193~0               ; |binToHex|Mux193~0               ; combout          ;
+; |binToHex|Mux192~0               ; |binToHex|Mux192~0               ; combout          ;
+; |binToHex|Mux191~0               ; |binToHex|Mux191~0               ; combout          ;
+; |binToHex|Mux190~0               ; |binToHex|Mux190~0               ; combout          ;
+; |binToHex|Mux189~0               ; |binToHex|Mux189~0               ; combout          ;
+; |binToHex|Mux188~0               ; |binToHex|Mux188~0               ; combout          ;
+; |binToHex|Mux188~1               ; |binToHex|Mux188~1               ; combout          ;
+; |binToHex|Mux186~0               ; |binToHex|Mux186~0               ; combout          ;
+; |binToHex|Mux186~1               ; |binToHex|Mux186~1               ; combout          ;
+; |binToHex|Mux185~0               ; |binToHex|Mux185~0               ; combout          ;
+; |binToHex|Mux184~0               ; |binToHex|Mux184~0               ; combout          ;
+; |binToHex|Mux183~0               ; |binToHex|Mux183~0               ; combout          ;
+; |binToHex|Mux182~0               ; |binToHex|Mux182~0               ; combout          ;
+; |binToHex|Mux179~0               ; |binToHex|Mux179~0               ; combout          ;
+; |binToHex|Mux178~0               ; |binToHex|Mux178~0               ; combout          ;
+; |binToHex|Mux177~0               ; |binToHex|Mux177~0               ; combout          ;
+; |binToHex|Mux176~0               ; |binToHex|Mux176~0               ; combout          ;
+; |binToHex|Mux175~0               ; |binToHex|Mux175~0               ; combout          ;
+; |binToHex|Mux174~0               ; |binToHex|Mux174~0               ; combout          ;
+; |binToHex|Mux171~0               ; |binToHex|Mux171~0               ; combout          ;
+; |binToHex|Mux170~0               ; |binToHex|Mux170~0               ; combout          ;
+; |binToHex|Mux169~0               ; |binToHex|Mux169~0               ; combout          ;
+; |binToHex|Mux168~0               ; |binToHex|Mux168~0               ; combout          ;
+; |binToHex|Mux167~0               ; |binToHex|Mux167~0               ; combout          ;
+; |binToHex|Mux166~0               ; |binToHex|Mux166~0               ; combout          ;
+; |binToHex|Mux165~0               ; |binToHex|Mux165~0               ; combout          ;
+; |binToHex|Mux164~0               ; |binToHex|Mux164~0               ; combout          ;
+; |binToHex|Mux163~0               ; |binToHex|Mux163~0               ; combout          ;
+; |binToHex|Mux161~0               ; |binToHex|Mux161~0               ; combout          ;
+; |binToHex|Mux160~0               ; |binToHex|Mux160~0               ; combout          ;
+; |binToHex|Mux158~0               ; |binToHex|Mux158~0               ; combout          ;
+; |binToHex|Mux157~0               ; |binToHex|Mux157~0               ; combout          ;
+; |binToHex|Mux156~0               ; |binToHex|Mux156~0               ; combout          ;
+; |binToHex|Mux154~0               ; |binToHex|Mux154~0               ; combout          ;
+; |binToHex|Mux153~0               ; |binToHex|Mux153~0               ; combout          ;
+; |binToHex|Mux152~0               ; |binToHex|Mux152~0               ; combout          ;
+; |binToHex|Mux150~0               ; |binToHex|Mux150~0               ; combout          ;
+; |binToHex|Mux148~0               ; |binToHex|Mux148~0               ; combout          ;
+; |binToHex|Mux146~0               ; |binToHex|Mux146~0               ; combout          ;
+; |binToHex|Mux144~0               ; |binToHex|Mux144~0               ; combout          ;
+; |binToHex|Mux143~0               ; |binToHex|Mux143~0               ; combout          ;
+; |binToHex|Mux142~0               ; |binToHex|Mux142~0               ; combout          ;
+; |binToHex|Mux141~0               ; |binToHex|Mux141~0               ; combout          ;
+; |binToHex|Mux140~0               ; |binToHex|Mux140~0               ; combout          ;
+; |binToHex|Mux139~0               ; |binToHex|Mux139~0               ; combout          ;
+; |binToHex|Mux139~1               ; |binToHex|Mux139~1               ; combout          ;
+; |binToHex|Mux138~0               ; |binToHex|Mux138~0               ; combout          ;
+; |binToHex|Mux135~0               ; |binToHex|Mux135~0               ; combout          ;
+; |binToHex|Mux134~0               ; |binToHex|Mux134~0               ; combout          ;
+; |binToHex|Mux133~0               ; |binToHex|Mux133~0               ; combout          ;
+; |binToHex|Mux132~0               ; |binToHex|Mux132~0               ; combout          ;
+; |binToHex|Mux131~0               ; |binToHex|Mux131~0               ; combout          ;
+; |binToHex|Mux129~0               ; |binToHex|Mux129~0               ; combout          ;
+; |binToHex|Mux128~0               ; |binToHex|Mux128~0               ; combout          ;
+; |binToHex|Mux127~0               ; |binToHex|Mux127~0               ; combout          ;
+; |binToHex|Mux126~0               ; |binToHex|Mux126~0               ; combout          ;
+; |binToHex|Mux125~0               ; |binToHex|Mux125~0               ; combout          ;
+; |binToHex|Mux124~0               ; |binToHex|Mux124~0               ; combout          ;
+; |binToHex|Mux123~0               ; |binToHex|Mux123~0               ; combout          ;
+; |binToHex|Mux122~0               ; |binToHex|Mux122~0               ; combout          ;
+; |binToHex|Mux118~0               ; |binToHex|Mux118~0               ; combout          ;
+; |binToHex|Mux117~0               ; |binToHex|Mux117~0               ; combout          ;
+; |binToHex|Mux115~0               ; |binToHex|Mux115~0               ; combout          ;
+; |binToHex|Mux114~0               ; |binToHex|Mux114~0               ; combout          ;
+; |binToHex|Mux112~0               ; |binToHex|Mux112~0               ; combout          ;
+; |binToHex|Mux111~0               ; |binToHex|Mux111~0               ; combout          ;
+; |binToHex|Mux110~0               ; |binToHex|Mux110~0               ; combout          ;
+; |binToHex|Mux109~0               ; |binToHex|Mux109~0               ; combout          ;
+; |binToHex|Mux108~0               ; |binToHex|Mux108~0               ; combout          ;
+; |binToHex|Mux107~0               ; |binToHex|Mux107~0               ; combout          ;
+; |binToHex|Mux104~0               ; |binToHex|Mux104~0               ; combout          ;
+; |binToHex|Mux103~0               ; |binToHex|Mux103~0               ; combout          ;
+; |binToHex|Mux102~0               ; |binToHex|Mux102~0               ; combout          ;
+; |binToHex|Mux100~0               ; |binToHex|Mux100~0               ; combout          ;
+; |binToHex|Mux99~0                ; |binToHex|Mux99~0                ; combout          ;
+; |binToHex|Mux96~0                ; |binToHex|Mux96~0                ; combout          ;
+; |binToHex|Mux95~0                ; |binToHex|Mux95~0                ; combout          ;
+; |binToHex|Mux94~0                ; |binToHex|Mux94~0                ; combout          ;
+; |binToHex|Mux93~0                ; |binToHex|Mux93~0                ; combout          ;
+; |binToHex|Mux92~0                ; |binToHex|Mux92~0                ; combout          ;
+; |binToHex|Mux91~0                ; |binToHex|Mux91~0                ; combout          ;
+; |binToHex|Mux89~0                ; |binToHex|Mux89~0                ; combout          ;
+; |binToHex|Mux88~0                ; |binToHex|Mux88~0                ; combout          ;
+; |binToHex|Mux87~0                ; |binToHex|Mux87~0                ; combout          ;
+; |binToHex|Mux82~0                ; |binToHex|Mux82~0                ; combout          ;
+; |binToHex|Mux81~0                ; |binToHex|Mux81~0                ; combout          ;
+; |binToHex|Mux80~0                ; |binToHex|Mux80~0                ; combout          ;
+; |binToHex|Mux78~0                ; |binToHex|Mux78~0                ; combout          ;
+; |binToHex|Mux77~0                ; |binToHex|Mux77~0                ; combout          ;
+; |binToHex|Mux75~0                ; |binToHex|Mux75~0                ; combout          ;
+; |binToHex|Mux74~0                ; |binToHex|Mux74~0                ; combout          ;
+; |binToHex|Mux72~0                ; |binToHex|Mux72~0                ; combout          ;
+; |binToHex|Mux71~0                ; |binToHex|Mux71~0                ; combout          ;
+; |binToHex|Mux69~0                ; |binToHex|Mux69~0                ; combout          ;
+; |binToHex|Mux68~0                ; |binToHex|Mux68~0                ; combout          ;
+; |binToHex|Mux64~0                ; |binToHex|Mux64~0                ; combout          ;
+; |binToHex|Mux63~0                ; |binToHex|Mux63~0                ; combout          ;
+; |binToHex|Mux62~0                ; |binToHex|Mux62~0                ; combout          ;
+; |binToHex|Mux61~0                ; |binToHex|Mux61~0                ; combout          ;
+; |binToHex|Mux59~0                ; |binToHex|Mux59~0                ; combout          ;
+; |binToHex|Mux58~0                ; |binToHex|Mux58~0                ; combout          ;
+; |binToHex|Mux57~0                ; |binToHex|Mux57~0                ; combout          ;
+; |binToHex|Mux56~0                ; |binToHex|Mux56~0                ; combout          ;
+; |binToHex|Mux54~0                ; |binToHex|Mux54~0                ; combout          ;
+; |binToHex|Mux51~0                ; |binToHex|Mux51~0                ; combout          ;
+; |binToHex|Mux49~0                ; |binToHex|Mux49~0                ; combout          ;
+; |binToHex|Mux48~0                ; |binToHex|Mux48~0                ; combout          ;
+; |binToHex|Mux45~0                ; |binToHex|Mux45~0                ; combout          ;
+; |binToHex|Mux44~0                ; |binToHex|Mux44~0                ; combout          ;
+; |binToHex|Mux43~0                ; |binToHex|Mux43~0                ; combout          ;
+; |binToHex|Mux42~0                ; |binToHex|Mux42~0                ; combout          ;
+; |binToHex|Mux36~0                ; |binToHex|Mux36~0                ; combout          ;
+; |binToHex|Mux35~0                ; |binToHex|Mux35~0                ; combout          ;
+; |binToHex|Mux34~0                ; |binToHex|Mux34~0                ; combout          ;
+; |binToHex|Mux31~0                ; |binToHex|Mux31~0                ; combout          ;
+; |binToHex|Mux30~0                ; |binToHex|Mux30~0                ; combout          ;
+; |binToHex|Mux29~0                ; |binToHex|Mux29~0                ; combout          ;
+; |binToHex|Mux28~0                ; |binToHex|Mux28~0                ; combout          ;
+; |binToHex|Mux27~0                ; |binToHex|Mux27~0                ; combout          ;
+; |binToHex|Mux26~0                ; |binToHex|Mux26~0                ; combout          ;
+; |binToHex|Mux25~0                ; |binToHex|Mux25~0                ; combout          ;
+; |binToHex|Mux24~0                ; |binToHex|Mux24~0                ; combout          ;
+; |binToHex|Mux23~0                ; |binToHex|Mux23~0                ; combout          ;
+; |binToHex|Mux22~0                ; |binToHex|Mux22~0                ; combout          ;
+; |binToHex|Mux21~0                ; |binToHex|Mux21~0                ; combout          ;
+; |binToHex|Mux20~0                ; |binToHex|Mux20~0                ; combout          ;
+; |binToHex|Mux19~0                ; |binToHex|Mux19~0                ; combout          ;
+; |binToHex|Mux18~0                ; |binToHex|Mux18~0                ; combout          ;
+; |binToHex|Mux17~0                ; |binToHex|Mux17~0                ; combout          ;
+; |binToHex|Mux14~0                ; |binToHex|Mux14~0                ; combout          ;
+; |binToHex|Mux13~0                ; |binToHex|Mux13~0                ; combout          ;
+; |binToHex|Mux12~0                ; |binToHex|Mux12~0                ; combout          ;
+; |binToHex|Mux11~0                ; |binToHex|Mux11~0                ; combout          ;
+; |binToHex|Mux10~0                ; |binToHex|Mux10~0                ; combout          ;
+; |binToHex|Mux9~0                 ; |binToHex|Mux9~0                 ; combout          ;
+; |binToHex|Mux8~0                 ; |binToHex|Mux8~0                 ; combout          ;
+; |binToHex|Mux7~0                 ; |binToHex|Mux7~0                 ; combout          ;
+; |binToHex|Mux6~0                 ; |binToHex|Mux6~0                 ; combout          ;
+; |binToHex|Mux5~0                 ; |binToHex|Mux5~0                 ; combout          ;
+; |binToHex|Mux4~0                 ; |binToHex|Mux4~0                 ; combout          ;
+; |binToHex|Mux3~0                 ; |binToHex|Mux3~0                 ; combout          ;
+; |binToHex|Mux2~0                 ; |binToHex|Mux2~0                 ; combout          ;
+; |binToHex|input[3]               ; |binToHex|input[3]~corein        ; combout          ;
+; |binToHex|input[0]               ; |binToHex|input[0]~corein        ; combout          ;
+; |binToHex|input[1]               ; |binToHex|input[1]~corein        ; combout          ;
+; |binToHex|input[2]               ; |binToHex|input[2]~corein        ; combout          ;
+; |binToHex|dot_matrix_screen[0]   ; |binToHex|dot_matrix_screen[0]   ; padio            ;
+; |binToHex|dot_matrix_screen[1]   ; |binToHex|dot_matrix_screen[1]   ; padio            ;
+; |binToHex|dot_matrix_screen[2]   ; |binToHex|dot_matrix_screen[2]   ; padio            ;
+; |binToHex|dot_matrix_screen[3]   ; |binToHex|dot_matrix_screen[3]   ; padio            ;
+; |binToHex|dot_matrix_screen[4]   ; |binToHex|dot_matrix_screen[4]   ; padio            ;
+; |binToHex|dot_matrix_screen[5]   ; |binToHex|dot_matrix_screen[5]   ; padio            ;
+; |binToHex|dot_matrix_screen[6]   ; |binToHex|dot_matrix_screen[6]   ; padio            ;
+; |binToHex|dot_matrix_screen[7]   ; |binToHex|dot_matrix_screen[7]   ; padio            ;
+; |binToHex|dot_matrix_screen[8]   ; |binToHex|dot_matrix_screen[8]   ; padio            ;
+; |binToHex|dot_matrix_screen[9]   ; |binToHex|dot_matrix_screen[9]   ; padio            ;
+; |binToHex|dot_matrix_screen[10]  ; |binToHex|dot_matrix_screen[10]  ; padio            ;
+; |binToHex|dot_matrix_screen[11]  ; |binToHex|dot_matrix_screen[11]  ; padio            ;
+; |binToHex|dot_matrix_screen[12]  ; |binToHex|dot_matrix_screen[12]  ; padio            ;
+; |binToHex|dot_matrix_screen[13]  ; |binToHex|dot_matrix_screen[13]  ; padio            ;
+; |binToHex|dot_matrix_screen[14]  ; |binToHex|dot_matrix_screen[14]  ; padio            ;
+; |binToHex|dot_matrix_screen[15]  ; |binToHex|dot_matrix_screen[15]  ; padio            ;
+; |binToHex|dot_matrix_screen[16]  ; |binToHex|dot_matrix_screen[16]  ; padio            ;
+; |binToHex|dot_matrix_screen[17]  ; |binToHex|dot_matrix_screen[17]  ; padio            ;
+; |binToHex|dot_matrix_screen[18]  ; |binToHex|dot_matrix_screen[18]  ; padio            ;
+; |binToHex|dot_matrix_screen[19]  ; |binToHex|dot_matrix_screen[19]  ; padio            ;
+; |binToHex|dot_matrix_screen[20]  ; |binToHex|dot_matrix_screen[20]  ; padio            ;
+; |binToHex|dot_matrix_screen[21]  ; |binToHex|dot_matrix_screen[21]  ; padio            ;
+; |binToHex|dot_matrix_screen[22]  ; |binToHex|dot_matrix_screen[22]  ; padio            ;
+; |binToHex|dot_matrix_screen[23]  ; |binToHex|dot_matrix_screen[23]  ; padio            ;
+; |binToHex|dot_matrix_screen[24]  ; |binToHex|dot_matrix_screen[24]  ; padio            ;
+; |binToHex|dot_matrix_screen[25]  ; |binToHex|dot_matrix_screen[25]  ; padio            ;
+; |binToHex|dot_matrix_screen[26]  ; |binToHex|dot_matrix_screen[26]  ; padio            ;
+; |binToHex|dot_matrix_screen[27]  ; |binToHex|dot_matrix_screen[27]  ; padio            ;
+; |binToHex|dot_matrix_screen[28]  ; |binToHex|dot_matrix_screen[28]  ; padio            ;
+; |binToHex|dot_matrix_screen[29]  ; |binToHex|dot_matrix_screen[29]  ; padio            ;
+; |binToHex|dot_matrix_screen[30]  ; |binToHex|dot_matrix_screen[30]  ; padio            ;
+; |binToHex|dot_matrix_screen[31]  ; |binToHex|dot_matrix_screen[31]  ; padio            ;
+; |binToHex|dot_matrix_screen[32]  ; |binToHex|dot_matrix_screen[32]  ; padio            ;
+; |binToHex|dot_matrix_screen[33]  ; |binToHex|dot_matrix_screen[33]  ; padio            ;
+; |binToHex|dot_matrix_screen[34]  ; |binToHex|dot_matrix_screen[34]  ; padio            ;
+; |binToHex|dot_matrix_screen[35]  ; |binToHex|dot_matrix_screen[35]  ; padio            ;
+; |binToHex|dot_matrix_screen[36]  ; |binToHex|dot_matrix_screen[36]  ; padio            ;
+; |binToHex|dot_matrix_screen[37]  ; |binToHex|dot_matrix_screen[37]  ; padio            ;
+; |binToHex|dot_matrix_screen[38]  ; |binToHex|dot_matrix_screen[38]  ; padio            ;
+; |binToHex|dot_matrix_screen[39]  ; |binToHex|dot_matrix_screen[39]  ; padio            ;
+; |binToHex|dot_matrix_screen[41]  ; |binToHex|dot_matrix_screen[41]  ; padio            ;
+; |binToHex|dot_matrix_screen[42]  ; |binToHex|dot_matrix_screen[42]  ; padio            ;
+; |binToHex|dot_matrix_screen[43]  ; |binToHex|dot_matrix_screen[43]  ; padio            ;
+; |binToHex|dot_matrix_screen[44]  ; |binToHex|dot_matrix_screen[44]  ; padio            ;
+; |binToHex|dot_matrix_screen[45]  ; |binToHex|dot_matrix_screen[45]  ; padio            ;
+; |binToHex|dot_matrix_screen[46]  ; |binToHex|dot_matrix_screen[46]  ; padio            ;
+; |binToHex|dot_matrix_screen[47]  ; |binToHex|dot_matrix_screen[47]  ; padio            ;
+; |binToHex|dot_matrix_screen[48]  ; |binToHex|dot_matrix_screen[48]  ; padio            ;
+; |binToHex|dot_matrix_screen[49]  ; |binToHex|dot_matrix_screen[49]  ; padio            ;
+; |binToHex|dot_matrix_screen[50]  ; |binToHex|dot_matrix_screen[50]  ; padio            ;
+; |binToHex|dot_matrix_screen[51]  ; |binToHex|dot_matrix_screen[51]  ; padio            ;
+; |binToHex|dot_matrix_screen[52]  ; |binToHex|dot_matrix_screen[52]  ; padio            ;
+; |binToHex|dot_matrix_screen[53]  ; |binToHex|dot_matrix_screen[53]  ; padio            ;
+; |binToHex|dot_matrix_screen[54]  ; |binToHex|dot_matrix_screen[54]  ; padio            ;
+; |binToHex|dot_matrix_screen[59]  ; |binToHex|dot_matrix_screen[59]  ; padio            ;
+; |binToHex|dot_matrix_screen[60]  ; |binToHex|dot_matrix_screen[60]  ; padio            ;
+; |binToHex|dot_matrix_screen[61]  ; |binToHex|dot_matrix_screen[61]  ; padio            ;
+; |binToHex|dot_matrix_screen[62]  ; |binToHex|dot_matrix_screen[62]  ; padio            ;
+; |binToHex|dot_matrix_screen[63]  ; |binToHex|dot_matrix_screen[63]  ; padio            ;
+; |binToHex|dot_matrix_screen[64]  ; |binToHex|dot_matrix_screen[64]  ; padio            ;
+; |binToHex|dot_matrix_screen[65]  ; |binToHex|dot_matrix_screen[65]  ; padio            ;
+; |binToHex|dot_matrix_screen[66]  ; |binToHex|dot_matrix_screen[66]  ; padio            ;
+; |binToHex|dot_matrix_screen[67]  ; |binToHex|dot_matrix_screen[67]  ; padio            ;
+; |binToHex|dot_matrix_screen[68]  ; |binToHex|dot_matrix_screen[68]  ; padio            ;
+; |binToHex|dot_matrix_screen[69]  ; |binToHex|dot_matrix_screen[69]  ; padio            ;
+; |binToHex|dot_matrix_screen[74]  ; |binToHex|dot_matrix_screen[74]  ; padio            ;
+; |binToHex|dot_matrix_screen[76]  ; |binToHex|dot_matrix_screen[76]  ; padio            ;
+; |binToHex|dot_matrix_screen[77]  ; |binToHex|dot_matrix_screen[77]  ; padio            ;
+; |binToHex|dot_matrix_screen[78]  ; |binToHex|dot_matrix_screen[78]  ; padio            ;
+; |binToHex|dot_matrix_screen[79]  ; |binToHex|dot_matrix_screen[79]  ; padio            ;
+; |binToHex|dot_matrix_screen[81]  ; |binToHex|dot_matrix_screen[81]  ; padio            ;
+; |binToHex|dot_matrix_screen[82]  ; |binToHex|dot_matrix_screen[82]  ; padio            ;
+; |binToHex|dot_matrix_screen[83]  ; |binToHex|dot_matrix_screen[83]  ; padio            ;
+; |binToHex|dot_matrix_screen[84]  ; |binToHex|dot_matrix_screen[84]  ; padio            ;
+; |binToHex|dot_matrix_screen[85]  ; |binToHex|dot_matrix_screen[85]  ; padio            ;
+; |binToHex|dot_matrix_screen[89]  ; |binToHex|dot_matrix_screen[89]  ; padio            ;
+; |binToHex|dot_matrix_screen[92]  ; |binToHex|dot_matrix_screen[92]  ; padio            ;
+; |binToHex|dot_matrix_screen[93]  ; |binToHex|dot_matrix_screen[93]  ; padio            ;
+; |binToHex|dot_matrix_screen[94]  ; |binToHex|dot_matrix_screen[94]  ; padio            ;
+; |binToHex|dot_matrix_screen[95]  ; |binToHex|dot_matrix_screen[95]  ; padio            ;
+; |binToHex|dot_matrix_screen[96]  ; |binToHex|dot_matrix_screen[96]  ; padio            ;
+; |binToHex|dot_matrix_screen[97]  ; |binToHex|dot_matrix_screen[97]  ; padio            ;
+; |binToHex|dot_matrix_screen[98]  ; |binToHex|dot_matrix_screen[98]  ; padio            ;
+; |binToHex|dot_matrix_screen[99]  ; |binToHex|dot_matrix_screen[99]  ; padio            ;
+; |binToHex|dot_matrix_screen[100] ; |binToHex|dot_matrix_screen[100] ; padio            ;
+; |binToHex|dot_matrix_screen[101] ; |binToHex|dot_matrix_screen[101] ; padio            ;
+; |binToHex|dot_matrix_screen[102] ; |binToHex|dot_matrix_screen[102] ; padio            ;
+; |binToHex|dot_matrix_screen[103] ; |binToHex|dot_matrix_screen[103] ; padio            ;
+; |binToHex|dot_matrix_screen[104] ; |binToHex|dot_matrix_screen[104] ; padio            ;
+; |binToHex|dot_matrix_screen[105] ; |binToHex|dot_matrix_screen[105] ; padio            ;
+; |binToHex|dot_matrix_screen[106] ; |binToHex|dot_matrix_screen[106] ; padio            ;
+; |binToHex|dot_matrix_screen[107] ; |binToHex|dot_matrix_screen[107] ; padio            ;
+; |binToHex|dot_matrix_screen[108] ; |binToHex|dot_matrix_screen[108] ; padio            ;
+; |binToHex|dot_matrix_screen[109] ; |binToHex|dot_matrix_screen[109] ; padio            ;
+; |binToHex|dot_matrix_screen[110] ; |binToHex|dot_matrix_screen[110] ; padio            ;
+; |binToHex|dot_matrix_screen[111] ; |binToHex|dot_matrix_screen[111] ; padio            ;
+; |binToHex|dot_matrix_screen[112] ; |binToHex|dot_matrix_screen[112] ; padio            ;
+; |binToHex|dot_matrix_screen[113] ; |binToHex|dot_matrix_screen[113] ; padio            ;
+; |binToHex|dot_matrix_screen[114] ; |binToHex|dot_matrix_screen[114] ; padio            ;
+; |binToHex|dot_matrix_screen[115] ; |binToHex|dot_matrix_screen[115] ; padio            ;
+; |binToHex|dot_matrix_screen[116] ; |binToHex|dot_matrix_screen[116] ; padio            ;
+; |binToHex|dot_matrix_screen[117] ; |binToHex|dot_matrix_screen[117] ; padio            ;
+; |binToHex|dot_matrix_screen[118] ; |binToHex|dot_matrix_screen[118] ; padio            ;
+; |binToHex|dot_matrix_screen[119] ; |binToHex|dot_matrix_screen[119] ; padio            ;
+; |binToHex|dot_matrix_screen[120] ; |binToHex|dot_matrix_screen[120] ; padio            ;
+; |binToHex|dot_matrix_screen[121] ; |binToHex|dot_matrix_screen[121] ; padio            ;
+; |binToHex|dot_matrix_screen[122] ; |binToHex|dot_matrix_screen[122] ; padio            ;
+; |binToHex|dot_matrix_screen[123] ; |binToHex|dot_matrix_screen[123] ; padio            ;
+; |binToHex|dot_matrix_screen[124] ; |binToHex|dot_matrix_screen[124] ; padio            ;
+; |binToHex|dot_matrix_screen[125] ; |binToHex|dot_matrix_screen[125] ; padio            ;
+; |binToHex|dot_matrix_screen[126] ; |binToHex|dot_matrix_screen[126] ; padio            ;
+; |binToHex|dot_matrix_screen[127] ; |binToHex|dot_matrix_screen[127] ; padio            ;
+; |binToHex|dot_matrix_screen[128] ; |binToHex|dot_matrix_screen[128] ; padio            ;
+; |binToHex|dot_matrix_screen[129] ; |binToHex|dot_matrix_screen[129] ; padio            ;
+; |binToHex|dot_matrix_screen[130] ; |binToHex|dot_matrix_screen[130] ; padio            ;
+; |binToHex|dot_matrix_screen[131] ; |binToHex|dot_matrix_screen[131] ; padio            ;
+; |binToHex|dot_matrix_screen[132] ; |binToHex|dot_matrix_screen[132] ; padio            ;
+; |binToHex|dot_matrix_screen[133] ; |binToHex|dot_matrix_screen[133] ; padio            ;
+; |binToHex|dot_matrix_screen[134] ; |binToHex|dot_matrix_screen[134] ; padio            ;
+; |binToHex|dot_matrix_screen[135] ; |binToHex|dot_matrix_screen[135] ; padio            ;
+; |binToHex|dot_matrix_screen[136] ; |binToHex|dot_matrix_screen[136] ; padio            ;
+; |binToHex|dot_matrix_screen[137] ; |binToHex|dot_matrix_screen[137] ; padio            ;
+; |binToHex|dot_matrix_screen[138] ; |binToHex|dot_matrix_screen[138] ; padio            ;
+; |binToHex|dot_matrix_screen[139] ; |binToHex|dot_matrix_screen[139] ; padio            ;
+; |binToHex|dot_matrix_screen[140] ; |binToHex|dot_matrix_screen[140] ; padio            ;
+; |binToHex|dot_matrix_screen[141] ; |binToHex|dot_matrix_screen[141] ; padio            ;
+; |binToHex|dot_matrix_screen[142] ; |binToHex|dot_matrix_screen[142] ; padio            ;
+; |binToHex|dot_matrix_screen[143] ; |binToHex|dot_matrix_screen[143] ; padio            ;
+; |binToHex|dot_matrix_screen[144] ; |binToHex|dot_matrix_screen[144] ; padio            ;
+; |binToHex|dot_matrix_screen[145] ; |binToHex|dot_matrix_screen[145] ; padio            ;
+; |binToHex|dot_matrix_screen[146] ; |binToHex|dot_matrix_screen[146] ; padio            ;
+; |binToHex|dot_matrix_screen[147] ; |binToHex|dot_matrix_screen[147] ; padio            ;
+; |binToHex|dot_matrix_screen[148] ; |binToHex|dot_matrix_screen[148] ; padio            ;
+; |binToHex|dot_matrix_screen[149] ; |binToHex|dot_matrix_screen[149] ; padio            ;
+; |binToHex|dot_matrix_screen[150] ; |binToHex|dot_matrix_screen[150] ; padio            ;
+; |binToHex|dot_matrix_screen[153] ; |binToHex|dot_matrix_screen[153] ; padio            ;
+; |binToHex|dot_matrix_screen[154] ; |binToHex|dot_matrix_screen[154] ; padio            ;
+; |binToHex|dot_matrix_screen[155] ; |binToHex|dot_matrix_screen[155] ; padio            ;
+; |binToHex|dot_matrix_screen[156] ; |binToHex|dot_matrix_screen[156] ; padio            ;
+; |binToHex|dot_matrix_screen[157] ; |binToHex|dot_matrix_screen[157] ; padio            ;
+; |binToHex|dot_matrix_screen[158] ; |binToHex|dot_matrix_screen[158] ; padio            ;
+; |binToHex|dot_matrix_screen[159] ; |binToHex|dot_matrix_screen[159] ; padio            ;
+; |binToHex|dot_matrix_screen[160] ; |binToHex|dot_matrix_screen[160] ; padio            ;
+; |binToHex|dot_matrix_screen[161] ; |binToHex|dot_matrix_screen[161] ; padio            ;
+; |binToHex|dot_matrix_screen[162] ; |binToHex|dot_matrix_screen[162] ; padio            ;
+; |binToHex|dot_matrix_screen[163] ; |binToHex|dot_matrix_screen[163] ; padio            ;
+; |binToHex|dot_matrix_screen[164] ; |binToHex|dot_matrix_screen[164] ; padio            ;
+; |binToHex|dot_matrix_screen[165] ; |binToHex|dot_matrix_screen[165] ; padio            ;
+; |binToHex|dot_matrix_screen[170] ; |binToHex|dot_matrix_screen[170] ; padio            ;
+; |binToHex|dot_matrix_screen[171] ; |binToHex|dot_matrix_screen[171] ; padio            ;
+; |binToHex|dot_matrix_screen[172] ; |binToHex|dot_matrix_screen[172] ; padio            ;
+; |binToHex|dot_matrix_screen[173] ; |binToHex|dot_matrix_screen[173] ; padio            ;
+; |binToHex|dot_matrix_screen[174] ; |binToHex|dot_matrix_screen[174] ; padio            ;
+; |binToHex|dot_matrix_screen[175] ; |binToHex|dot_matrix_screen[175] ; padio            ;
+; |binToHex|dot_matrix_screen[176] ; |binToHex|dot_matrix_screen[176] ; padio            ;
+; |binToHex|dot_matrix_screen[177] ; |binToHex|dot_matrix_screen[177] ; padio            ;
+; |binToHex|dot_matrix_screen[178] ; |binToHex|dot_matrix_screen[178] ; padio            ;
+; |binToHex|dot_matrix_screen[179] ; |binToHex|dot_matrix_screen[179] ; padio            ;
+; |binToHex|dot_matrix_screen[180] ; |binToHex|dot_matrix_screen[180] ; padio            ;
+; |binToHex|dot_matrix_screen[181] ; |binToHex|dot_matrix_screen[181] ; padio            ;
+; |binToHex|dot_matrix_screen[185] ; |binToHex|dot_matrix_screen[185] ; padio            ;
+; |binToHex|dot_matrix_screen[186] ; |binToHex|dot_matrix_screen[186] ; padio            ;
+; |binToHex|dot_matrix_screen[187] ; |binToHex|dot_matrix_screen[187] ; padio            ;
+; |binToHex|dot_matrix_screen[188] ; |binToHex|dot_matrix_screen[188] ; padio            ;
+; |binToHex|dot_matrix_screen[189] ; |binToHex|dot_matrix_screen[189] ; padio            ;
+; |binToHex|dot_matrix_screen[190] ; |binToHex|dot_matrix_screen[190] ; padio            ;
+; |binToHex|dot_matrix_screen[191] ; |binToHex|dot_matrix_screen[191] ; padio            ;
+; |binToHex|dot_matrix_screen[192] ; |binToHex|dot_matrix_screen[192] ; padio            ;
+; |binToHex|dot_matrix_screen[193] ; |binToHex|dot_matrix_screen[193] ; padio            ;
+; |binToHex|dot_matrix_screen[194] ; |binToHex|dot_matrix_screen[194] ; padio            ;
+; |binToHex|dot_matrix_screen[195] ; |binToHex|dot_matrix_screen[195] ; padio            ;
+; |binToHex|dot_matrix_screen[196] ; |binToHex|dot_matrix_screen[196] ; padio            ;
+; |binToHex|dot_matrix_screen[197] ; |binToHex|dot_matrix_screen[197] ; padio            ;
+; |binToHex|dot_matrix_screen[200] ; |binToHex|dot_matrix_screen[200] ; padio            ;
+; |binToHex|dot_matrix_screen[201] ; |binToHex|dot_matrix_screen[201] ; padio            ;
+; |binToHex|dot_matrix_screen[202] ; |binToHex|dot_matrix_screen[202] ; padio            ;
+; |binToHex|dot_matrix_screen[203] ; |binToHex|dot_matrix_screen[203] ; padio            ;
+; |binToHex|dot_matrix_screen[204] ; |binToHex|dot_matrix_screen[204] ; padio            ;
+; |binToHex|dot_matrix_screen[205] ; |binToHex|dot_matrix_screen[205] ; padio            ;
+; |binToHex|dot_matrix_screen[206] ; |binToHex|dot_matrix_screen[206] ; padio            ;
+; |binToHex|dot_matrix_screen[207] ; |binToHex|dot_matrix_screen[207] ; padio            ;
+; |binToHex|dot_matrix_screen[209] ; |binToHex|dot_matrix_screen[209] ; padio            ;
+; |binToHex|dot_matrix_screen[210] ; |binToHex|dot_matrix_screen[210] ; padio            ;
+; |binToHex|dot_matrix_screen[211] ; |binToHex|dot_matrix_screen[211] ; padio            ;
+; |binToHex|dot_matrix_screen[212] ; |binToHex|dot_matrix_screen[212] ; padio            ;
+; |binToHex|dot_matrix_screen[213] ; |binToHex|dot_matrix_screen[213] ; padio            ;
+; |binToHex|dot_matrix_screen[215] ; |binToHex|dot_matrix_screen[215] ; padio            ;
+; |binToHex|dot_matrix_screen[216] ; |binToHex|dot_matrix_screen[216] ; padio            ;
+; |binToHex|dot_matrix_screen[217] ; |binToHex|dot_matrix_screen[217] ; padio            ;
+; |binToHex|dot_matrix_screen[218] ; |binToHex|dot_matrix_screen[218] ; padio            ;
+; |binToHex|dot_matrix_screen[219] ; |binToHex|dot_matrix_screen[219] ; padio            ;
+; |binToHex|dot_matrix_screen[220] ; |binToHex|dot_matrix_screen[220] ; padio            ;
+; |binToHex|dot_matrix_screen[221] ; |binToHex|dot_matrix_screen[221] ; padio            ;
+; |binToHex|dot_matrix_screen[222] ; |binToHex|dot_matrix_screen[222] ; padio            ;
+; |binToHex|dot_matrix_screen[223] ; |binToHex|dot_matrix_screen[223] ; padio            ;
+; |binToHex|dot_matrix_screen[224] ; |binToHex|dot_matrix_screen[224] ; padio            ;
+; |binToHex|dot_matrix_screen[225] ; |binToHex|dot_matrix_screen[225] ; padio            ;
+; |binToHex|dot_matrix_screen[226] ; |binToHex|dot_matrix_screen[226] ; padio            ;
+; |binToHex|dot_matrix_screen[227] ; |binToHex|dot_matrix_screen[227] ; padio            ;
+; |binToHex|dot_matrix_screen[228] ; |binToHex|dot_matrix_screen[228] ; padio            ;
+; |binToHex|dot_matrix_screen[229] ; |binToHex|dot_matrix_screen[229] ; padio            ;
+; |binToHex|dot_matrix_screen[230] ; |binToHex|dot_matrix_screen[230] ; padio            ;
+; |binToHex|dot_matrix_screen[231] ; |binToHex|dot_matrix_screen[231] ; padio            ;
+; |binToHex|dot_matrix_screen[232] ; |binToHex|dot_matrix_screen[232] ; padio            ;
+; |binToHex|dot_matrix_screen[233] ; |binToHex|dot_matrix_screen[233] ; padio            ;
+; |binToHex|dot_matrix_screen[234] ; |binToHex|dot_matrix_screen[234] ; padio            ;
+; |binToHex|dot_matrix_screen[235] ; |binToHex|dot_matrix_screen[235] ; padio            ;
+; |binToHex|dot_matrix_screen[236] ; |binToHex|dot_matrix_screen[236] ; padio            ;
+; |binToHex|dot_matrix_screen[237] ; |binToHex|dot_matrix_screen[237] ; padio            ;
+; |binToHex|dot_matrix_screen[238] ; |binToHex|dot_matrix_screen[238] ; padio            ;
+; |binToHex|dot_matrix_screen[239] ; |binToHex|dot_matrix_screen[239] ; padio            ;
+; |binToHex|dot_matrix_screen[240] ; |binToHex|dot_matrix_screen[240] ; padio            ;
+; |binToHex|dot_matrix_screen[241] ; |binToHex|dot_matrix_screen[241] ; padio            ;
+; |binToHex|dot_matrix_screen[242] ; |binToHex|dot_matrix_screen[242] ; padio            ;
+; |binToHex|dot_matrix_screen[243] ; |binToHex|dot_matrix_screen[243] ; padio            ;
+; |binToHex|dot_matrix_screen[244] ; |binToHex|dot_matrix_screen[244] ; padio            ;
+; |binToHex|dot_matrix_screen[245] ; |binToHex|dot_matrix_screen[245] ; padio            ;
+; |binToHex|dot_matrix_screen[246] ; |binToHex|dot_matrix_screen[246] ; padio            ;
+; |binToHex|dot_matrix_screen[247] ; |binToHex|dot_matrix_screen[247] ; padio            ;
+; |binToHex|dot_matrix_screen[248] ; |binToHex|dot_matrix_screen[248] ; padio            ;
+; |binToHex|dot_matrix_screen[249] ; |binToHex|dot_matrix_screen[249] ; padio            ;
+; |binToHex|dot_matrix_screen[250] ; |binToHex|dot_matrix_screen[250] ; padio            ;
+; |binToHex|dot_matrix_screen[251] ; |binToHex|dot_matrix_screen[251] ; padio            ;
+; |binToHex|dot_matrix_screen[252] ; |binToHex|dot_matrix_screen[252] ; padio            ;
+; |binToHex|dot_matrix_screen[253] ; |binToHex|dot_matrix_screen[253] ; padio            ;
+; |binToHex|dot_matrix_screen[254] ; |binToHex|dot_matrix_screen[254] ; padio            ;
+; |binToHex|dot_matrix_screen[255] ; |binToHex|dot_matrix_screen[255] ; padio            ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                               ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |binToHex|dot_matrix_screen[40]  ; |binToHex|dot_matrix_screen[40]  ; padio            ;
+; |binToHex|dot_matrix_screen[55]  ; |binToHex|dot_matrix_screen[55]  ; padio            ;
+; |binToHex|dot_matrix_screen[56]  ; |binToHex|dot_matrix_screen[56]  ; padio            ;
+; |binToHex|dot_matrix_screen[57]  ; |binToHex|dot_matrix_screen[57]  ; padio            ;
+; |binToHex|dot_matrix_screen[58]  ; |binToHex|dot_matrix_screen[58]  ; padio            ;
+; |binToHex|dot_matrix_screen[70]  ; |binToHex|dot_matrix_screen[70]  ; padio            ;
+; |binToHex|dot_matrix_screen[71]  ; |binToHex|dot_matrix_screen[71]  ; padio            ;
+; |binToHex|dot_matrix_screen[72]  ; |binToHex|dot_matrix_screen[72]  ; padio            ;
+; |binToHex|dot_matrix_screen[73]  ; |binToHex|dot_matrix_screen[73]  ; padio            ;
+; |binToHex|dot_matrix_screen[75]  ; |binToHex|dot_matrix_screen[75]  ; padio            ;
+; |binToHex|dot_matrix_screen[80]  ; |binToHex|dot_matrix_screen[80]  ; padio            ;
+; |binToHex|dot_matrix_screen[86]  ; |binToHex|dot_matrix_screen[86]  ; padio            ;
+; |binToHex|dot_matrix_screen[87]  ; |binToHex|dot_matrix_screen[87]  ; padio            ;
+; |binToHex|dot_matrix_screen[88]  ; |binToHex|dot_matrix_screen[88]  ; padio            ;
+; |binToHex|dot_matrix_screen[90]  ; |binToHex|dot_matrix_screen[90]  ; padio            ;
+; |binToHex|dot_matrix_screen[91]  ; |binToHex|dot_matrix_screen[91]  ; padio            ;
+; |binToHex|dot_matrix_screen[151] ; |binToHex|dot_matrix_screen[151] ; padio            ;
+; |binToHex|dot_matrix_screen[152] ; |binToHex|dot_matrix_screen[152] ; padio            ;
+; |binToHex|dot_matrix_screen[166] ; |binToHex|dot_matrix_screen[166] ; padio            ;
+; |binToHex|dot_matrix_screen[167] ; |binToHex|dot_matrix_screen[167] ; padio            ;
+; |binToHex|dot_matrix_screen[168] ; |binToHex|dot_matrix_screen[168] ; padio            ;
+; |binToHex|dot_matrix_screen[169] ; |binToHex|dot_matrix_screen[169] ; padio            ;
+; |binToHex|dot_matrix_screen[182] ; |binToHex|dot_matrix_screen[182] ; padio            ;
+; |binToHex|dot_matrix_screen[183] ; |binToHex|dot_matrix_screen[183] ; padio            ;
+; |binToHex|dot_matrix_screen[184] ; |binToHex|dot_matrix_screen[184] ; padio            ;
+; |binToHex|dot_matrix_screen[198] ; |binToHex|dot_matrix_screen[198] ; padio            ;
+; |binToHex|dot_matrix_screen[199] ; |binToHex|dot_matrix_screen[199] ; padio            ;
+; |binToHex|dot_matrix_screen[208] ; |binToHex|dot_matrix_screen[208] ; padio            ;
+; |binToHex|dot_matrix_screen[214] ; |binToHex|dot_matrix_screen[214] ; padio            ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                               ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |binToHex|dot_matrix_screen[40]  ; |binToHex|dot_matrix_screen[40]  ; padio            ;
+; |binToHex|dot_matrix_screen[55]  ; |binToHex|dot_matrix_screen[55]  ; padio            ;
+; |binToHex|dot_matrix_screen[56]  ; |binToHex|dot_matrix_screen[56]  ; padio            ;
+; |binToHex|dot_matrix_screen[57]  ; |binToHex|dot_matrix_screen[57]  ; padio            ;
+; |binToHex|dot_matrix_screen[58]  ; |binToHex|dot_matrix_screen[58]  ; padio            ;
+; |binToHex|dot_matrix_screen[70]  ; |binToHex|dot_matrix_screen[70]  ; padio            ;
+; |binToHex|dot_matrix_screen[71]  ; |binToHex|dot_matrix_screen[71]  ; padio            ;
+; |binToHex|dot_matrix_screen[72]  ; |binToHex|dot_matrix_screen[72]  ; padio            ;
+; |binToHex|dot_matrix_screen[73]  ; |binToHex|dot_matrix_screen[73]  ; padio            ;
+; |binToHex|dot_matrix_screen[75]  ; |binToHex|dot_matrix_screen[75]  ; padio            ;
+; |binToHex|dot_matrix_screen[80]  ; |binToHex|dot_matrix_screen[80]  ; padio            ;
+; |binToHex|dot_matrix_screen[86]  ; |binToHex|dot_matrix_screen[86]  ; padio            ;
+; |binToHex|dot_matrix_screen[87]  ; |binToHex|dot_matrix_screen[87]  ; padio            ;
+; |binToHex|dot_matrix_screen[88]  ; |binToHex|dot_matrix_screen[88]  ; padio            ;
+; |binToHex|dot_matrix_screen[90]  ; |binToHex|dot_matrix_screen[90]  ; padio            ;
+; |binToHex|dot_matrix_screen[91]  ; |binToHex|dot_matrix_screen[91]  ; padio            ;
+; |binToHex|dot_matrix_screen[151] ; |binToHex|dot_matrix_screen[151] ; padio            ;
+; |binToHex|dot_matrix_screen[152] ; |binToHex|dot_matrix_screen[152] ; padio            ;
+; |binToHex|dot_matrix_screen[166] ; |binToHex|dot_matrix_screen[166] ; padio            ;
+; |binToHex|dot_matrix_screen[167] ; |binToHex|dot_matrix_screen[167] ; padio            ;
+; |binToHex|dot_matrix_screen[168] ; |binToHex|dot_matrix_screen[168] ; padio            ;
+; |binToHex|dot_matrix_screen[169] ; |binToHex|dot_matrix_screen[169] ; padio            ;
+; |binToHex|dot_matrix_screen[182] ; |binToHex|dot_matrix_screen[182] ; padio            ;
+; |binToHex|dot_matrix_screen[183] ; |binToHex|dot_matrix_screen[183] ; padio            ;
+; |binToHex|dot_matrix_screen[184] ; |binToHex|dot_matrix_screen[184] ; padio            ;
+; |binToHex|dot_matrix_screen[198] ; |binToHex|dot_matrix_screen[198] ; padio            ;
+; |binToHex|dot_matrix_screen[199] ; |binToHex|dot_matrix_screen[199] ; padio            ;
+; |binToHex|dot_matrix_screen[208] ; |binToHex|dot_matrix_screen[208] ; padio            ;
+; |binToHex|dot_matrix_screen[214] ; |binToHex|dot_matrix_screen[214] ; padio            ;
++----------------------------------+----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Sun Nov 04 13:06:18 2012
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off binToHex -c binToHex
+Info: Using vector source file "E:/yejianfei/binToHex/binToHex.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      93.19 %
+Info: Number of transitions in simulation is 11154
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 147 megabytes
+    Info: Processing ended: Sun Nov 04 13:06:20 2012
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

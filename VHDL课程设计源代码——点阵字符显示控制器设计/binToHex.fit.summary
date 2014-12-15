@@ -1,0 +1,19 @@
+Fitter Status : Successful - Sun Nov 04 11:56:29 2012
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : binToHex
+Top-level Entity Name : binToHex
+Family : Arria GX
+Device : EP1AGX20CF780C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 166 / 17,264 ( < 1 % )
+    Dedicated logic registers : 0 / 17,264 ( 0 % )
+Total registers : 0
+Total pins : 260 / 366 ( 71 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 1,229,184 ( 0 % )
+DSP block 9-bit elements : 0 / 80 ( 0 % )
+Total GXB Receiver Channels : 0 / 4 ( 0 % )
+Total GXB Transmitter Channels : 0 / 4 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
