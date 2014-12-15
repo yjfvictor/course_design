@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-family: '华文行楷', '黑体', '宋体';
+	font-size: 36px;
+}
+
+ol {
+	font-weight: bold;
+	text-align: left;
+	padding-left: 20%;
+	padding-top: 8%;
+}

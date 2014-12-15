@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-family: '华文行楷', '黑体', '宋体';
+	font-size: 36px;
+}
+
+.text {
+	width: 300px;
+}
+
+th {
+	text-align: center;
+	width: 130px;
+}
+
+td {
+	text-align: left;
+}

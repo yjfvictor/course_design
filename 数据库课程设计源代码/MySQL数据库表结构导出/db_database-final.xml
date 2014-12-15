@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="students_info">
+	<table_structure name="change_code">
+		<field Field="code" Type="varchar(255)" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="description" Type="varchar(255)" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="change_code" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="code" Collation="A" Cardinality="5" Null="" Index_type="BTREE" Comment="" />
+		<options Name="change_code" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="5" Avg_row_length="20" Data_length="100" Max_data_length="281474976710655" Index_length="4096" Data_free="0" Create_time="2012-12-25 09:24:15" Update_time="2012-12-27 00:30:39" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="change_code">
+	<row>
+		<field name="code">0</field>
+		<field name="description">è½¬ç³»</field>
+	</row>
+	<row>
+		<field name="code">1</field>
+		<field name="description">ä¼‘å­¦</field>
+	</row>
+	<row>
+		<field name="code">2</field>
+		<field name="description">å¤å­¦</field>
+	</row>
+	<row>
+		<field name="code">3</field>
+		<field name="description">é€€å­¦</field>
+	</row>
+	<row>
+		<field name="code">4</field>
+		<field name="description">æ¯•ä¸š</field>
+	</row>
+	</table_data>
+	<table_structure name="changes">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="studentid" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="changes" Type="varchar(255)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="rec_time" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="description" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="changes" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" />
+		<key Table="changes" Non_unique="1" Key_name="studentid" Seq_in_index="1" Column_name="studentid" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<key Table="changes" Non_unique="1" Key_name="changes" Seq_in_index="1" Column_name="changes" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<options Name="changes" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="0" Avg_row_length="0" Data_length="296" Max_data_length="281474976710655" Index_length="6144" Data_free="296" Auto_increment="52" Create_time="2012-12-26 05:47:42" Update_time="2013-01-02 01:37:57" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="changes">
+	</table_data>
+	<table_structure name="class">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(255)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="monitor" Type="varchar(255)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<key Table="class" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="8" Null="" Index_type="BTREE" Comment="" />
+		<key Table="class" Non_unique="1" Key_name="monitor" Seq_in_index="1" Column_name="monitor" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<options Name="class" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="8" Avg_row_length="34" Data_length="308" Max_data_length="281474976710655" Index_length="5120" Data_free="32" Auto_increment="32" Create_time="2012-12-26 08:05:44" Update_time="2012-12-28 08:20:25" Check_time="2012-12-26 08:05:44" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="class">
+	<row>
+		<field name="id">24</field>
+		<field name="name">è®¡ç®—æœºäºŒç­</field>
+		<field name="monitor">1000</field>
+	</row>
+	<row>
+		<field name="id">25</field>
+		<field name="name">è®¡ç®—æœºä¸‰ç­</field>
+		<field name="monitor">1000</field>
+	</row>
+	<row>
+		<field name="id">26</field>
+		<field name="name">è®¡ç®—æœºå››ç­</field>
+		<field name="monitor">1000</field>
+	</row>
+	<row>
+		<field name="id">23</field>
+		<field name="name">è®¡ç®—æœºä¸€ç­</field>
+		<field name="monitor">2000</field>
+	</row>
+	<row>
+		<field name="id">27</field>
+		<field name="name">ç½‘ç»œä¸€ç­</field>
+		<field name="monitor"></field>
+	</row>
+	<row>
+		<field name="id">28</field>
+		<field name="name">ç½‘ç»œäºŒç­</field>
+		<field name="monitor"></field>
+	</row>
+	<row>
+		<field name="id">29</field>
+		<field name="name">ç½‘ç»œä¸‰ç­</field>
+		<field name="monitor"></field>
+	</row>
+	<row>
+		<field name="id">30</field>
+		<field name="name">ä¿¡æ¯ä¸€ç­</field>
+		<field name="monitor"></field>
+	</row>
+	</table_data>
+	<table_structure name="department">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(255)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<key Table="department" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="4" Null="" Index_type="BTREE" Comment="" />
+		<key Table="department" Non_unique="0" Key_name="name" Seq_in_index="1" Column_name="name" Collation="A" Cardinality="4" Null="" Index_type="BTREE" Comment="" />
+		<options Name="department" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="4" Avg_row_length="33" Data_length="132" Max_data_length="281474976710655" Index_length="5120" Data_free="0" Auto_increment="23" Create_time="2012-12-27 07:20:44" Update_time="2012-12-27 08:19:32" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="department">
+	<row>
+		<field name="id">21</field>
+		<field name="name">æœºç”µå­¦é™¢</field>
+	</row>
+	<row>
+		<field name="id">20</field>
+		<field name="name">ä¿¡æ¯å­¦é™¢</field>
+	</row>
+	<row>
+		<field name="id">19</field>
+		<field name="name">è®¡ç®—æœºå­¦é™¢</field>
+	</row>
+	<row>
+		<field name="id">22</field>
+		<field name="name">åŒ–å­¦åŒ–å·¥å­¦é™¢</field>
+	</row>
+	</table_data>
+	<table_structure name="login_users">
+		<field Field="username" Type="varchar(255)" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="password" Type="varchar(255)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="admin" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<key Table="login_users" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="username" Collation="A" Cardinality="2" Null="" Index_type="BTREE" Comment="" />
+		<options Name="login_users" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="2" Avg_row_length="44" Data_length="132" Max_data_length="281474976710655" Index_length="4096" Data_free="44" Create_time="2013-01-02 02:14:33" Update_time="2013-01-02 03:41:55" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="login_users">
+	<row>
+		<field name="username">admin</field>
+		<field name="password">cc6879ff2b0d1fe6dec8269c9d77aa86</field>
+		<field name="admin">1</field>
+	</row>
+	<row>
+		<field name="username">user</field>
+		<field name="password">c12e01f2a13ff5587e1e9e4aedb8242d</field>
+		<field name="admin">0</field>
+	</row>
+	</table_data>
+	<table_structure name="punish_levels">
+		<field Field="code" Type="varchar(255)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="description" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<options Name="punish_levels" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="5" Avg_row_length="20" Data_length="104" Max_data_length="281474976710655" Index_length="1024" Data_free="0" Create_time="2012-12-25 09:32:19" Update_time="2012-12-27 01:27:22" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="punish_levels">
+	<row>
+		<field name="code">0</field>
+		<field name="description">è­¦å‘Š</field>
+	</row>
+	<row>
+		<field name="code">1</field>
+		<field name="description">ä¸¥é‡è­¦å‘Š</field>
+	</row>
+	<row>
+		<field name="code">2</field>
+		<field name="description">è®°è¿‡</field>
+	</row>
+	<row>
+		<field name="code">3</field>
+		<field name="description">è®°å¤§è¿‡</field>
+	</row>
+	<row>
+		<field name="code">4</field>
+		<field name="description">å¼€é™¤</field>
+	</row>
+	</table_data>
+	<table_structure name="punishment">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="studentid" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="levels" Type="varchar(255)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="rec_time" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="description" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="punishment" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" />
+		<key Table="punishment" Non_unique="1" Key_name="studentid" Seq_in_index="1" Column_name="studentid" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<key Table="punishment" Non_unique="1" Key_name="levels" Seq_in_index="1" Column_name="levels" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<options Name="punishment" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="0" Avg_row_length="0" Data_length="64" Max_data_length="281474976710655" Index_length="6144" Data_free="64" Auto_increment="6" Create_time="2012-12-26 08:03:18" Update_time="2013-01-02 06:16:15" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="punishment">
+	</table_data>
+	<table_structure name="reward">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="studentid" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="levels" Type="varchar(255)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="rec_time" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="description" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="reward" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" />
+		<key Table="reward" Non_unique="1" Key_name="studentid" Seq_in_index="1" Column_name="studentid" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<key Table="reward" Non_unique="1" Key_name="levels" Seq_in_index="1" Column_name="levels" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<options Name="reward" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="0" Avg_row_length="0" Data_length="188" Max_data_length="281474976710655" Index_length="6144" Data_free="188" Auto_increment="23" Create_time="2012-12-26 05:47:58" Update_time="2013-01-02 04:48:02" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="reward">
+	</table_data>
+	<table_structure name="reward_levels">
+		<field Field="code" Type="varchar(255)" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="description" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="reward_levels" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="code" Collation="A" Cardinality="7" Null="" Index_type="BTREE" Comment="" />
+		<options Name="reward_levels" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="7" Avg_row_length="28" Data_length="196" Max_data_length="281474976710655" Index_length="4096" Data_free="0" Create_time="2012-12-25 09:31:38" Update_time="2012-12-27 01:25:14" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="reward_levels">
+	<row>
+		<field name="code">0</field>
+		<field name="description">æ ¡ç‰¹ç­‰å¥–å­¦é‡‘</field>
+	</row>
+	<row>
+		<field name="code">1</field>
+		<field name="description">æ ¡ä¸€ç­‰å¥–å­¦é‡‘</field>
+	</row>
+	<row>
+		<field name="code">2</field>
+		<field name="description">æ ¡äºŒç­‰å¥–å­¦é‡‘</field>
+	</row>
+	<row>
+		<field name="code">3</field>
+		<field name="description">æ ¡ä¸‰ç­‰å¥–å­¦é‡‘</field>
+	</row>
+	<row>
+		<field name="code">4</field>
+		<field name="description">ç³»ä¸€ç­‰å¥–å­¦é‡‘</field>
+	</row>
+	<row>
+		<field name="code">5</field>
+		<field name="description">ç³»äºŒç­‰å¥–å­¦é‡‘</field>
+	</row>
+	<row>
+		<field name="code">6</field>
+		<field name="description">ç³»ä¸‰ç­‰å¥–å­¦é‡‘</field>
+	</row>
+	</table_data>
+	<table_structure name="student">
+		<field Field="id" Type="varchar(255)" Null="NO" Key="PRI" Default="" Extra="" Comment="" />
+		<field Field="name" Type="varchar(255)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="sex" Type="varchar(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="class" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="department" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="birthday" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="native_place" Type="varchar(255)" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="student" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" />
+		<key Table="student" Non_unique="1" Key_name="class" Seq_in_index="1" Column_name="class" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<key Table="student" Non_unique="1" Key_name="department" Seq_in_index="1" Column_name="department" Collation="A" Null="YES" Index_type="BTREE" Comment="" />
+		<options Name="student" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="38" Data_length="380" Max_data_length="281474976710655" Index_length="6144" Data_free="0" Create_time="2012-12-27 05:46:09" Update_time="2013-01-02 06:13:55" Check_time="2012-12-27 05:46:09" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="student">
+	<row>
+		<field name="id">3</field>
+		<field name="name"></field>
+		<field name="sex">ç”·</field>
+		<field name="class">24</field>
+		<field name="department">21</field>
+		<field name="birthday" xsi:nil="true" />
+		<field name="native_place" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="name"></field>
+		<field name="sex">ç”·</field>
+		<field name="class">24</field>
+		<field name="department">21</field>
+		<field name="birthday" xsi:nil="true" />
+		<field name="native_place" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">ddd</field>
+		<field name="name">ddd</field>
+		<field name="sex">å¥³</field>
+		<field name="class">29</field>
+		<field name="department">20</field>
+		<field name="birthday">1000-01-01</field>
+		<field name="native_place">dddd</field>
+	</row>
+	<row>
+		<field name="id">sdfsd</field>
+		<field name="name">sdfsdf</field>
+		<field name="sex">ç”·</field>
+		<field name="class">24</field>
+		<field name="department">21</field>
+		<field name="birthday" xsi:nil="true" />
+		<field name="native_place" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1005020218</field>
+		<field name="name"></field>
+		<field name="sex">ç”·</field>
+		<field name="class">26</field>
+		<field name="department">21</field>
+		<field name="birthday" xsi:nil="true" />
+		<field name="native_place" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1</field>
+		<field name="name"></field>
+		<field name="sex">ç”·</field>
+		<field name="class">24</field>
+		<field name="department">21</field>
+		<field name="birthday" xsi:nil="true" />
+		<field name="native_place" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="name"></field>
+		<field name="sex">ç”·</field>
+		<field name="class">24</field>
+		<field name="department">21</field>
+		<field name="birthday" xsi:nil="true" />
+		<field name="native_place" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">12</field>
+		<field name="name">sdf</field>
+		<field name="sex">ç”·</field>
+		<field name="class">24</field>
+		<field name="department">21</field>
+		<field name="birthday">2012-12-30</field>
+		<field name="native_place">asdf</field>
+	</row>
+	<row>
+		<field name="id">564</field>
+		<field name="name"></field>
+		<field name="sex">å¥³</field>
+		<field name="class">23</field>
+		<field name="department">19</field>
+		<field name="birthday">2012-03-10</field>
+		<field name="native_place" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">112323</field>
+		<field name="name">sfdsdf</field>
+		<field name="sex">å¥³</field>
+		<field name="class">26</field>
+		<field name="department">19</field>
+		<field name="birthday">2010-10-10</field>
+		<field name="native_place">sdfds</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>
