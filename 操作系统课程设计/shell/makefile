@@ -1,0 +1,15 @@
+CC=gcc
+FILENAME=victorshell
+FILEEXT=c
+STD=-std=gnu99
+DEBUG_OPTION=-ggdb
+THREAD_OPTION=-D_REENTRANT -lpthread
+OTHER_OPTION=-Wall
+CFLAGS=$(STD) $(DEBUG_OPTION) $(THREAD_OPTION) $(OTHER_OPTION)
+
+$(FILENAME): $(FILENAME).$(FILEEXT)
+	$(CC) $< -o $@ $(CFLAGS)
+clean:
+	-rm $(FILENAME)
+
+.PHONY: clean
