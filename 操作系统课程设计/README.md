@@ -5,6 +5,6 @@
 
 This is operating system course design for 2010 matriculation students. I have also done the operating system course design for 2012 matriculation students, in another repository called `hnust_2012_operating_system_course_design`. You can view it if you want.
 
-同主目录，所有代码以MIT许可证发布。
+同主目录，所有代码以[CC0 1.0 通用](https://creativecommons.org/publicdomain/zero/1.0/deed.zh_CN)许可证发布。
 
-Also, all the code is under MIT license.
+Also, all the code is under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license.
